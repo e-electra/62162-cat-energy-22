@@ -1,0 +1,58 @@
+.header {
+  &__branding {
+    background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url('../../img/index-background-mobile.png') no-repeat;
+    background-size: cover;
+  }
+
+  &__title,
+  &__subtitle {
+    font-weight: 400;
+    color: $basicwhite;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 14px;
+    font-family: $fontHeading;
+  }
+
+  &__button {
+    @include btn;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    &__branding {
+      background-image: none;
+    }
+
+    &__title,
+    &__subtitle {
+      color: $basicblack;
+    }
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    &__branding {
+      background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url('../../img/index-background-desktop.png') no-repeat;;
+    }
+  }
+}

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
     <header class="header">
@@ -23,25 +24,27 @@
           </button>
           <ul class="navigation__list">
             <li class="navigation__item navigation__item--active">
-              <a href="#">Главная</a>
+              <a href="#" class="navigation__link">Главная</a>
             </li>
             <li class="navigation__item">
-              <a href="#">Каталог продукции</a>
+              <a href="#" class="navigation__link">Каталог продукции</a>
             </li>
             <li class="navigation__item">
-              <a href="form.html">Подбор программы</a>
+              <a href="form.html" class="navigation__link">Подбор программы</a>
             </li>
           </ul>
         </nav>
-        <h1 class="header__title">Функциональное питание для котов</h1>
-        <p>Занялся собой? Займись котом!</p>
-        <picture>
-          <source srcset="img/index-can-mobile.png" media="(max-width: 767px)" />
-          <source srcset="img/index-can-tablet.png" media="(min-width: 768px) and (max-width: 1024px)" />
-          <source srcset="img/index-can-desktop.png" />
-          <img src="img/index-can-mobile.png" alt="Cat Energy курица" />
-        </picture>
-        <a class="header__button" href="#">подобрать программу</a>
+        <div class="header__branding">
+          <h1 class="header__title">Функциональное питание для котов</h1>
+          <p class="header__subtitle">Занялся собой? Займись котом!</p>
+          <picture>
+            <source srcset="img/index-can-mobile.png" media="(max-width: 767px)" />
+            <source srcset="img/index-can-tablet.png" media="(min-width: 768px) and (max-width: 1024px)" />
+            <source srcset="img/index-can-desktop.png" />
+            <img src="img/index-can-mobile.png" alt="Cat Energy курица" />
+          </picture>
+          <a class="header__button" href="#">подобрать программу</a>
+        </div>
       </div>
     </header>
     <main>
