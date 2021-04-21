@@ -22,25 +22,25 @@
 
     &--leaf {
       &::before {
-        content: url(../../img/icons/icon_leaf.svg);
+        content: url("../../img/icons/icon_leaf.svg");
       }
     }
 
     &--powder {
       &::before {
-        content: url(../../img/icons/icon_powder.svg);
+        content: url("../../img/icons/icon_powder.svg");
       }
     }
 
     &--fork {
       &::before {
-        content: url(../../img/icons/icon_fork.svg);
+        content: url("../../img/icons/icon_fork.svg");
       }
     }
 
     &--clock {
       &::before {
-        content: url(../../img/icons/icon_clock.svg);
+        content: url("../../img/icons/icon_clock.svg");
       }
     }
   }
