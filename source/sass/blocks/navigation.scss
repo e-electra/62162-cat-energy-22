@@ -1,4 +1,8 @@
 .navigation {
+  &__list {
+    list-style: none;
+  }
+
   &__item {
     font-size: 20px;
     line-height: 20px;

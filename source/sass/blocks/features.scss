@@ -1,0 +1,69 @@
+.features {
+  &__title {
+    @include block-title;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    &::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $basicgreen;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--leaf {
+      &::before {
+        content: url(../../img/icons/icon_leaf.svg);
+      }
+    }
+
+    &--powder {
+      &::before {
+        content: url(../../img/icons/icon_powder.svg);
+      }
+    }
+
+    &--fork {
+      &::before {
+        content: url(../../img/icons/icon_fork.svg);
+      }
+    }
+
+    &--clock {
+      &::before {
+        content: url(../../img/icons/icon_clock.svg);
+      }
+    }
+  }
+
+  &__text {
+    color: $darkgrey;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    &__item {
+      &::before {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

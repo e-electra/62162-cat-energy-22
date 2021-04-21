@@ -21,3 +21,16 @@
 @mixin btn-desktop {
   @include btn-tablet;
 }
+
+@mixin block-title {
+  font-family: $fontHeading;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
