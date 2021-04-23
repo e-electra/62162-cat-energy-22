@@ -1,0 +1,52 @@
+.header__branding {
+  background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url("../../img/index-background-mobile.png") no-repeat;
+  background-size: cover;
+}
+
+.header__title,
+.header__subtitle {
+  font-weight: 400;
+  color: $basicwhite;
+}
+
+.header__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.header__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $fontHeading;
+}
+
+.header__button {
+  @include btn;
+}
+
+@media screen and (min-width: 768px) {
+  .header__branding {
+    background-image: none;
+  }
+
+  .header__title,
+  .header__subtitle {
+    color: $basicblack;
+  }
+
+  .header__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .header__subtitle {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__branding {
+    background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url("../../img/index-background-desktop.png") no-repeat;
+  }
+}

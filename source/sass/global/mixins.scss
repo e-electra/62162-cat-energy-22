@@ -1,0 +1,35 @@
+@mixin btn {
+  display: inline-flex;
+  background-color: $basicgreen;
+  color: $basicwhite;
+  font-family: $fontHeading;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@mixin btn-tablet {
+  @include btn;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 14px 0;
+}
+
+
+@mixin btn-desktop {
+  @include btn-tablet;
+}
+
+@mixin block-title {
+  font-family: $fontHeading;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

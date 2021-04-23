@@ -1,0 +1,35 @@
+.navigation__list {
+  list-style: none;
+}
+
+.navigation__item {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: $fontHeading;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navigation__link {
+  color: $basicblack;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .navigation__item {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .navigation__link {
+    color: $basicwhite;
+  }
+}
