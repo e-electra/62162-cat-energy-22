@@ -1,104 +1,99 @@
 .program {
   background-color: $basicgrey;
   padding: 24px 20px 18px;
+}
 
-  &__image {
-    background-color: $basicgreen;
-    border-radius: 50%;
-    position: relative;
-    width: 50px;
-    height: 50px;
-  }
+.program__image {
+  background-color: $basicgreen;
+  border-radius: 50%;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
 
-  &__title {
-    font-size: 24px;
-    line-height: 37px;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
+.program__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
 
-  &__description {
-    font-size: 14px;
-    line-height: 18px;
-    color: $darkgrey;
-  }
+.program__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: $darkgrey;
+}
 
-  &__link {
-    color: $basicblack;
-    font-family: $fontHeading;
-    font-size: 16px;
-    line-height: 18px;
-    display: inline-block;
-    position: relative;
-    text-transform: uppercase;
-  }
+.program__link {
+  color: $basicblack;
+  font-family: $fontHeading;
+  font-size: 16px;
+  line-height: 18px;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+}
 
-  &--slim {
-    & .program__icon {
-      max-width: 36px;
-    }
-  }
+.program--slim .program__icon {
+  max-width: 36px;
+}
 
-  &--pro {
-    & .program__icon {
-      max-width: 67px;
-    }
-  }
+.program--pro .program__icon {
+  max-width: 67px;
 }
 
 @media screen and (min-width: 768px) {
-  .program {
-    &__image {
-      width: 200px;
-      height: 200px;
-    }
+  .program__image {
+    width: 200px;
+    height: 200px;
+  }
 
-    &__title {
-      font-size: 36px;
-      line-height: 36px;
-    }
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
 
-    &__desription {
-      font-size: 16px;
-      line-height: 24px;
-      color: $basicblack;
-    }
+  .program__desription {
+    font-size: 16px;
+    line-height: 24px;
+    color: $basicblack;
+  }
 
-    &__link {
-      font-size: 20px;
-      line-height: 29px;
-    }
+  .program__link {
+    font-size: 20px;
+    line-height: 29px;
+  }
 
+  .program__icon {
+    max-width: 100%;
+  }
 
-    & .program__icon {
-      max-width: 100%;
-    }
+  .program--slim .program__icon {
+    max-width: 140px;
+  }
+
+  .program--pro .program__icon {
+    max-width: 268px;
   }
 }
 
 
 @media screen and (min-width: 1024px) {
-  .program {
-    &__image {
-      width: 100px;
-      height: 100px;
-    }
+  .program__image {
+    width: 100px;
+    height: 100px;
+  }
 
-    &__title {
-      font-size: 36px;
-      line-height: 36px;
-    }
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
 
-    &--slim {
-      & .program__icon {
-        width: 70px;
-      }
-    }
+  .program--slim .program__icon {
+    max-width: 70px;
+  }
 
-    &--pro {
-      & .program__icon {
-        width: 134px;
-      }
-    }
+  .program--pro .program__icon {
+    max-width: 134px;
   }
 }

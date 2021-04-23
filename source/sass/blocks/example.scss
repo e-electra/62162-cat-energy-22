@@ -1,28 +1,26 @@
 .example {
   background-color: $mediumgrey;
+}
 
-  &__costs {
-    font-family: $fontHeading;
-    font-weight: normal;
-    text-transform: uppercase;
-  }
+.example__costs {
+  font-family: $fontHeading;
+  font-weight: normal;
+  text-transform: uppercase;
+}
 
-  &__title {
-    @include block-title;
-  }
+.example__title {
+  @include block-title;
+}
 
-  &__content {
-    color: $darkgrey;
-    font-size: 14px;
-    line-height: 18px;
-  }
+.example__content {
+  color: $darkgrey;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 @media screen and (min-width: 768px) {
-  .example {
-    &__content {
-      font-size: 16px;
-      line-height: 24px;
-    }
+  .example__content {
+    font-size: 16px;
+    line-height: 24px;
   }
 }

@@ -1,19 +1,15 @@
-.slider {
-  &__label {
-    font-family: $fontHeading;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 20px;
-  }
+.slider__label {
+  font-family: $fontHeading;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .slider {
-    &__label {
-      font-size: 20px;
-      line-height: 30px;
-      border-bottom: 1px dotted $grey;
-    }
+  .slider__label {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted $grey;
   }
 }
