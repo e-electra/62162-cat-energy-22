@@ -5,37 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
-    <header class="header">
-      <div class="container">
-        <a href="#" class="header__logo">
-          <img src="img/logo-mobile.svg" alt="Cat Energy" width="33" height="37" />
-          <picture>
-            <source srcset="img/logo-text.svg" media="(max-width: 767px)" />
-            <source srcset="img/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1024px)" />
-            <source srcset="img/logo-desktop.svg" media="(min-width: 1220px)" />
-            <img src="img/logo-text.svg" alt="Cat Energy" />
-          </picture>
-        </a>
-        <nav class="header__navigation navigation">
-          <button class="navigation__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="navigation__list">
-            <li class="navigation__item navigation__item--active">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#">Каталог продукции</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="header__logo">
+        <img src="img/logo-mobile.svg" alt="Cat Energy" width="33" height="37" />
+        <picture>
+          <source srcset="img/logo-text.svg" media="(max-width: 767px)" />
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1024px)" />
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1220px)" />
+          <img src="img/logo-text.svg" alt="Cat Energy" />
+        </picture>
+      </a>
+      <nav class="header__navigation navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--active">
+            <a href="#" class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a href="form.html" class="navigation__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
     <main>
       <section class="program-select-form">
         <div class="container">
@@ -51,11 +52,11 @@
                   <input class="form-section__input" type="text" name="Имя" placeholder="Барсик" required />
                 </label>
                 <label class="form-section__item">
-                  <span class="form-section__text">Вес(кг):*</span>
+                  <span class="form-section__text">Вес&nbsp;(кг):*</span>
                   <input class="form-section__input" type="text" name="Вес" placeholder="7" required />
                 </label>
                 <label class="form-section__item">
-                  <span class="form-section__text">Возраст(лет):</span>
+                  <span class="form-section__text">Возраст&nbsp;(лет):</span>
                   <input class="form-section__input" type="text" name="Возраст" placeholder="7" />
                 </label>
             </div>
@@ -66,15 +67,15 @@
               <div class="form-section__program">
                 <label class="form-section__item">
                   <input class="form-section__radio" type="radio" name="program" value="slim" checked />
-                  <span>Похудение</span>
+                  <span class="form-section__text">Похудение</span>
                 </label>
                 <label class="form-section__item">
                   <input class="form-section__radio" type="radio" name="program" value="gain" />
-                  <span>Набор массы</span>
+                  <span class="form-section__text">Набор массы</span>
                 </label>
                 <label class="form-section__item">
                   <input class="form-section__radio" type="radio" name="program" value="unknown" />
-                  <span>Не знаю (Нужен ваш совет)</span>
+                  <span class="form-section__text">Не знаю (Нужен ваш совет)</span>
                 </label>
               </div>
             </div>
@@ -95,7 +96,14 @@
           <fieldset class="form-section">
             <h3 class="form-section__title">Комментарий</h3>
             <div class="container">
-              <textarea class="form-section__input" name="Comment" id="Comment" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea
+                class="form-section__input"
+                name="Comment" id="Comment"
+                cols="30"
+                rows="5"
+                placeholder="Расскажите обо всех повадках кота"
+              >
+              </textarea>
             </div>
           </fieldset>
           <fieldset class="form-section">
@@ -104,26 +112,26 @@
               <div class="form-section__incremental">
                 <label class="form-section__item">
                   <input class="form-section__check" type="checkbox" name="additional" value="Sweetener" checked />
-                  <span>Сахарозаменитель</span>
+                  <span class="form-section__text">Сахарозаменитель</span>
                 </label>
                 <label class="form-section__item">
                   <input class="form-section__check" type="checkbox" name="additional" value="Water" />
-                  <span>Питьевая вода</span>
+                  <span class="form-section__text">Питьевая вода</span>
                 </label>
                 <label class="form-section__item">
                   <input class="form-section__check" type="checkbox" name="additional" value="Milk" />
-                  <span>Молоко</span>
+                  <span class="form-section__text">Молоко</span>
                 </label>
                 <label class="form-section__item">
                   <input class="form-section__check" type="checkbox" name="additional" value="Vitamins" />
-                  <span>Витамины</span>
+                  <span class="form-section__text">Витамины</span>
                 </label>
               </div>
             </div>
           </fieldset>
           <div class="container">
-            <button class="btn">Отправить заявку</button>
-            <p class="program-select-form__hint"> <sup>*</sup> &mdash; Обязательные поля</p>
+            <button class="program-select-form__button button">Отправить заявку</button>
+            <p class="program-select-form__hint"> &ast; &mdash; Обязательные поля</p>
           </div>
           </form>
       </section>
@@ -139,30 +147,30 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <div class="container">
-        <a href="#" class="pa">
+        <a href="#" class="page-footer__logo">
           <img src="img/logo-text.svg" alt="Cat Energy" />
         </a>
         <div class="social">
-          <h2 class="social__title">Давайте дружить!</h2>
-            <ul class="social__list">
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <img src="img/icons/icon_vk.svg" alt="Вконтакте" />
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <img src="img/icons/icon_instagram.svg" alt="Инстаграм" />
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <img src="img/icons/icon_fb.svg" alt="Фейсбук" />
-                </a>
-              </li>
-            </ul>
+          <h2 class="social__title visually-hidden">Давайте дружить!</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img src="img/icons/icon_vk.svg" alt="Вконтакте" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img src="img/icons/icon_instagram.svg" alt="Инстаграм" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img src="img/icons/icon_fb.svg" alt="Фейсбук" />
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="copyright">
           <p class="copyright__text">HTML Academy</p>

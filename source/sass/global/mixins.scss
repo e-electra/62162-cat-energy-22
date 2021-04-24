@@ -8,18 +8,14 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-}
+  border: none;
+  text-decoration: none;
 
-@mixin btn-tablet {
-  @include btn;
-  font-size: 20px;
-  line-height: 20px;
-  padding: 14px 0;
-}
-
-
-@mixin btn-desktop {
-  @include btn-tablet;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 0;
+  }
 }
 
 @mixin block-title {
@@ -31,5 +27,17 @@
   @media screen and (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+@mixin text-special {
+  font-family: $fontHeading;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

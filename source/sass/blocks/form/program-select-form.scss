@@ -1,0 +1,19 @@
+.program-select-form__title {
+  @include block-title;
+}
+
+.program-select-form__description {
+  @include text-special;
+}
+
+.program-select-form__hint {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .program-select-form__hint {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
