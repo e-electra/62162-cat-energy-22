@@ -1,0 +1,18 @@
+.form-section__text {
+  @include text-special;
+  color: $darkgrey;
+}
+
+.form-section__input {
+  &::placeholder {
+    @include text-special;
+    color: $darkgrey;
+  }
+}
+
+.form-section__title {
+  font-family: $fontHeading;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+}
