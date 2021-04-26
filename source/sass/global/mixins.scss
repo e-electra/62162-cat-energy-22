@@ -41,3 +41,21 @@
     line-height: 30px;
   }
 }
+
+
+@mixin text-basic {
+  font-size: 14px;
+  line-height: 14px;
+  color: $darkgrey;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@mixin btn-muted {
+  @include btn;
+  color: $darkgrey;
+  background-color: $basicgrey;
+}

@@ -1,0 +1,13 @@
+.add-good-item {
+  list-style: none;
+  padding: 26px 38px;
+  outline: 5px inset green;
+}
+
+.add-good-item__title {
+  @include text-special;
+}
+
+.add-good-item__description {
+  @include text-basic;
+}

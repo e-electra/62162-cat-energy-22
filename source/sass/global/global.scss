@@ -40,3 +40,7 @@ h6 {
 .button {
   @include btn;
 }
+
+.button--muted {
+  @include btn-muted;
+}
