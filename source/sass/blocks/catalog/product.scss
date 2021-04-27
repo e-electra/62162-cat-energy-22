@@ -1,0 +1,20 @@
+.product--more {
+  background-color: initial;
+}
+
+.product__title {
+  @include text-special;
+}
+
+.product__info,
+.product__text {
+  @include text-basic;
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    &:not(.product--more) {
+      background-color: $basicgrey;
+    }
+  }
+}
