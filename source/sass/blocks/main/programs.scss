@@ -1,0 +1,27 @@
+.programs__container {
+  display: grid;
+  max-width: calc(100% - 40px);
+}
+
+.programs__item {
+  width: 100%;
+}
+
+
+@media screen and (min-width: $tablet-width) {
+  .programs__item {
+    max-width: calc(100% - 60px);
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .programs__container {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    max-width: $desktop-container-width;
+  }
+
+  .programs__item {
+    max-width: initial;
+  }
+}

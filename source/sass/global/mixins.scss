@@ -18,6 +18,12 @@
   }
 }
 
+@mixin btn-muted {
+  @include btn;
+  color: $darkgrey;
+  background-color: $basicgrey;
+}
+
 @mixin block-title {
   font-family: $fontHeading;
   font-weight: normal;
@@ -42,20 +48,13 @@
   }
 }
 
-
 @mixin text-basic {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 16px;
   color: $darkgrey;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 16px;
   }
-}
-
-@mixin btn-muted {
-  @include btn;
-  color: $darkgrey;
-  background-color: $basicgrey;
 }
