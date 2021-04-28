@@ -1,3 +1,37 @@
 .page-footer {
   background-color: $basicgrey;
 }
+
+.page-footer__container {
+  display: grid;
+}
+
+
+@media screen and (min-width: $tablet-width) {
+  .page-footer {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+  }
+
+  .page-footer__container {
+    width: 100%;
+    flex-basis: 100%;
+    grid-template-columns: auto auto auto;
+  }
+
+  .page-footer__logo {
+    justify-self: start;
+    align-self: center;
+  }
+
+  .page-footer__social {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .page-footer__copyright {
+    justify-self: end;
+    align-self: center;
+  }
+}

@@ -1,0 +1,57 @@
+.hero {
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url("../../img/index-background-mobile.png") no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 302px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.hero__img {
+  position: absolute;
+  max-width: 280px;
+  z-index: -1;
+  margin: auto;
+  bottom: -140px;
+  left: 0;
+  right: 0;
+}
+
+
+@media screen and (min-width: $tablet-width) {
+  .hero {
+    background: none;
+    top: 200px;
+    min-height: 609px;
+    z-index: -1;
+  }
+
+  .hero__img-wrapper {
+    min-height: 609px;
+    width: 100%;
+  }
+
+  .hero__img {
+    max-width: 709px;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .hero {
+    right: -50%;
+    background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url("../../img/index-background-desktop.png") no-repeat;
+    top: -140px;
+    background-position: left;
+    background-size: 100%;
+    height: 694px;
+  }
+
+  .hero__img {
+    left: -81%;
+    max-width: 552px;
+  }
+}

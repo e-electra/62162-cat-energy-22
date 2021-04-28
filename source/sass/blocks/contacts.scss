@@ -1,3 +1,15 @@
+.contacts__text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 28px 20px;
+  background-color: $basicwhite;
+}
+
+.contacts__map {
+  min-height: 362px;
+  background-color: $darkgrey;
+}
+
 .contacts__greet {
   font-family: $fontHeading;
   text-transform: uppercase;
@@ -12,7 +24,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet-width) {
   .contacts__greet {
     font-size: 20px;
     line-height: 20px;
@@ -20,5 +32,28 @@
 
   .contacts__address {
     font-size: 16px;
+  }
+
+  .contacts__map {
+    min-height: 400px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__text {
+    position: absolute;
+    top: 95px;
+    box-sizing: border-box;
+    padding: 60px 76px;
+    max-width: 570px;
+    grid-column-gap: 87px;
+  }
+
+  .contacts__greet {
+    line-height: 21px;
   }
 }

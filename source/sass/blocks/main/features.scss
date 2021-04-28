@@ -2,8 +2,16 @@
   @include block-title;
 }
 
+.features__title,
+.features__list {
+  padding: 0 20px;
+}
+
 .features__list {
   list-style: none;
+  margin: 0;
+  display: grid;
+  grid-row-gap: 20px;
 }
 
 .features__item {
@@ -22,25 +30,25 @@
 
 .features__item--leaf {
   &::before {
-    content: url("../../img/icons/icon_leaf.svg");
+    content: url("../../../img/icons/icon_leaf.svg");
   }
 }
 
 .features__item--powder {
   &::before {
-    content: url("../../img/icons/icon_powder.svg");
+    content: url("../../../img/icons/icon_powder.svg");
   }
 }
 
 .features__item--fork {
   &::before {
-    content: url("../../img/icons/icon_fork.svg");
+    content: url("../../../img/icons/icon_fork.svg");
   }
 }
 
 .features__item--clock {
   &::before {
-    content: url("../../img/icons/icon_clock.svg");
+    content: url("../../../img/icons/icon_clock.svg");
   }
 }
 
@@ -50,7 +58,18 @@
   line-height: 18px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet-width) {
+  .features__title,
+  .features__list {
+    padding: 0 30px;
+  }
+
+  .features__list {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 153px;
+    grid-row-gap: 37px;
+  }
+
   .features__item {
     &::before {
       width: 80px;
@@ -61,5 +80,18 @@
   .features__text {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+
+@media screen and (min-width: $desktop-width) {
+  .features__title,
+  .features__list {
+    padding: 0;
+  }
+
+  .features__list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 94px;
   }
 }
