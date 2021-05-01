@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page page--form" lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,81 +8,83 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
-  <header class="header">
-    <div class="container">
-      <a href="#" class="header__logo">
-        <img src="img/logo-mobile.svg" alt="Cat Energy" width="33" height="37" />
-        <picture>
-          <source srcset="img/logo-text.svg" media="(max-width: 767px)" />
-          <source srcset="img/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1024px)" />
-          <source srcset="img/logo-desktop.svg" media="(min-width: 1220px)" />
-          <img src="img/logo-text.svg" alt="Cat Energy" />
-        </picture>
-      </a>
-      <nav class="header__navigation navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--active">
-            <a href="#" class="navigation__link">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a href="form.html" class="navigation__link">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header class="header">
+      <div class="header__nav-wrapper container">
+        <a href="#" class="header__logo">
+          <img class="header__icon" src="img/logo-mobile.svg" alt="Cat Energy" width="33" height="37">
+          <picture>
+            <source srcset="img/logo-text.svg" media="(max-width: 767px)" />
+            <source srcset="img/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1024px)" />
+            <source srcset="img/logo-desktop.svg" media="(min-width: 1220px)" />
+            <img src="img/logo-text.svg" alt="Cat Energy" />
+          </picture>
+        </a>
+        <nav class="header__navigation navigation">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active">
+              <a href="#" class="navigation__link">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a href="form.html" class="navigation__link">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
       <section class="program-select-form">
-        <div class="container">
+        <div class="program-select-form__title-container container">
           <h1 class="program-select-form__title">Подбор программы</h1>
           <p class="program-select-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         </div>
         <form class="program-select-form__form" action="http://echo.htmlacademy.ru" method="post">
-          <fieldset class="form-section">
-            <div class="container">
-              <h3 class="visually-hidden">Информация о коте</h3>
-                <label class="form-section__item">
-                  <span class="form-section__text">Имя:*</span>
-                  <input class="form-section__input" type="text" name="Имя" placeholder="Барсик" required />
-                </label>
-                <label class="form-section__item">
-                  <span class="form-section__text">Вес&nbsp;(кг):*</span>
-                  <input class="form-section__input" type="text" name="Вес" placeholder="7" required />
-                </label>
-                <label class="form-section__item">
-                  <span class="form-section__text">Возраст&nbsp;(лет):</span>
-                  <input class="form-section__input" type="text" name="Возраст" placeholder="7" />
-                </label>
+          <fieldset class="form-section form-section--basic">
+            <h3 class="visually-hidden">Информация о коте</h3>
+            <div class="form-section__container container">
+              <label class="form-section__item">
+                <span class="form-section__text">Имя:*</span>
+                <input class="form-section__input" type="text" name="Имя" placeholder="Барсик" required />
+              </label>
+              <label class="form-section__item">
+                <span class="form-section__text">Вес&nbsp;(кг):*</span>
+                <input class="form-section__input" type="text" name="Вес" placeholder="7" required />
+              </label>
+              <label class="form-section__item">
+                <span class="form-section__text">Возраст&nbsp;(лет):</span>
+                <input class="form-section__input" type="text" name="Возраст" placeholder="7" />
+              </label>
             </div>
           </fieldset>
-          <fieldset class="form-section">
-            <div class="container">
-              <h3 class="visually-hidden">Выбор программы</h3>
-              <div class="form-section__program">
-                <label class="form-section__item">
-                  <input class="form-section__radio" type="radio" name="program" value="slim" checked />
-                  <span class="form-section__text">Похудение</span>
-                </label>
-                <label class="form-section__item">
-                  <input class="form-section__radio" type="radio" name="program" value="gain" />
-                  <span class="form-section__text">Набор массы</span>
-                </label>
-                <label class="form-section__item">
-                  <input class="form-section__radio" type="radio" name="program" value="unknown" />
-                  <span class="form-section__text">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </div>
+          <fieldset class="form-section form-section--program">
+            <h3 class="visually-hidden">Выбор программы</h3>
+            <div class="form-section__container container">
+              <label class="form-section__item">
+                <input class="form-section__radio" type="radio" name="program" value="slim" checked />
+                <span class="form-section__text">Похудение</span>
+              </label>
+              <label class="form-section__item">
+                <input class="form-section__radio" type="radio" name="program" value="gain" />
+                <span class="form-section__text">Набор массы</span>
+              </label>
+              <label class="form-section__item">
+                <input class="form-section__radio" type="radio" name="program" value="unknown" />
+                <span class="form-section__text">Не знаю (Нужен ваш совет)</span>
+              </label>
             </div>
           </fieldset>
-          <fieldset class="form-section">
-            <h3 class="form-section__title">Контактные данные (владельца кота)</h3>
-            <div class="container">
+          <fieldset class="form-section form-section--contact">
+            <h3 class="form-section__title">
+              <span class="form-section__title-container container">
+                Контактные данные (владельца кота)
+              </span>
+            </h3>
+            <div class="form-section__container container">
               <label class="form-section__item">
                 <span class="form-section__text">E-mail:*</span>
                 <input class="form-section__input" type="email" name="email" placeholder="kuklachev@gmail.com" required />
@@ -93,47 +95,45 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="form-section">
-            <h3 class="form-section__title">Комментарий</h3>
-            <div class="container">
+          <fieldset class="form-section form-section--comment">
+            <h3 class="form-section__title"><span class="form-section__title-container container">Комментарий</span></h3>
+            <div class="form-section__container container">
               <textarea
-                class="form-section__input"
-                name="Comment" id="Comment"
+                class="form-section__input form-section__input--textarea"
+                name="comment"
+                id="comment"
                 cols="30"
                 rows="5"
-                placeholder="Расскажите обо всех повадках кота"
-              >
-              </textarea>
+                noresize
+                placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
-          <fieldset class="form-section">
-            <h3 class="form-section__title">Дополнительно</h3>
-            <div class="container">
-              <div class="form-section__incremental">
-                <label class="form-section__item">
-                  <input class="form-section__check" type="checkbox" name="additional" value="Sweetener" checked />
-                  <span class="form-section__text">Сахарозаменитель</span>
-                </label>
-                <label class="form-section__item">
-                  <input class="form-section__check" type="checkbox" name="additional" value="Water" />
-                  <span class="form-section__text">Питьевая вода</span>
-                </label>
-                <label class="form-section__item">
-                  <input class="form-section__check" type="checkbox" name="additional" value="Milk" />
-                  <span class="form-section__text">Молоко</span>
-                </label>
-                <label class="form-section__item">
-                  <input class="form-section__check" type="checkbox" name="additional" value="Vitamins" />
-                  <span class="form-section__text">Витамины</span>
-                </label>
-              </div>
+          <fieldset class="form-section form-section--additional">
+            <h3 class="form-section__title"><span class="form-section__title-container container">Дополнительно</span></h3>
+            <div class="form-section__container container">
+              <label class="form-section__item">
+                <input class="form-section__check" type="checkbox" name="additional" value="Sweetener" checked />
+                <span class="form-section__text">Сахарозаменитель</span>
+              </label>
+              <label class="form-section__item">
+                <input class="form-section__check" type="checkbox" name="additional" value="Water" />
+                <span class="form-section__text">Питьевая вода</span>
+              </label>
+              <label class="form-section__item">
+                <input class="form-section__check" type="checkbox" name="additional" value="Milk" />
+                <span class="form-section__text">Молоко</span>
+              </label>
+              <label class="form-section__item">
+                <input class="form-section__check" type="checkbox" name="additional" value="Vitamins" />
+                <span class="form-section__text">Витамины</span>
+              </label>
             </div>
           </fieldset>
-          <div class="container">
+          <div class="program-select-form__controls-container container">
             <button class="program-select-form__button button">Отправить заявку</button>
             <p class="program-select-form__hint"> &ast; &mdash; Обязательные поля</p>
           </div>
-          </form>
+        </form>
       </section>
       <section class="contacts">
         <div class="container">
@@ -141,18 +141,18 @@
             <p class="contacts__greet">Приглашаем к сотрудничеству дилеров! </p>
             <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
-          <div class="contacts__map">
-            <h2 class="visually-hidden">Карта</h2>
-          </div>
+        </div>
+        <div class="contacts__map">
+          <h2 class="visually-hidden">Карта</h2>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="page-footer__container container">
         <a href="#" class="page-footer__logo">
           <img src="img/logo-text.svg" alt="Cat Energy" />
         </a>
-        <div class="social">
+        <div class="page-footer__social social">
           <h2 class="social__title visually-hidden">Давайте дружить!</h2>
           <ul class="social__list">
             <li class="social__item">
@@ -172,7 +172,7 @@
             </li>
           </ul>
         </div>
-        <div class="copyright">
+        <div class="page-footer__copyright copyright">
           <p class="copyright__text">HTML Academy</p>
           <a href="#" class="copyright__link">
             <img src="img/icons/logo_html_academy.svg" alt="HTML Academy" />
