@@ -1,5 +1,6 @@
 @mixin btn {
   display: inline-flex;
+  justify-content: center;
   background-color: $basicgreen;
   color: $basicwhite;
   font-family: $fontHeading;
@@ -30,7 +31,7 @@
   font-size: 36px;
   line-height: 40px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
@@ -42,7 +43,7 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -53,8 +54,32 @@
   line-height: 16px;
   color: $darkgrey;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+@mixin adaptive-width {
+  max-width: calc(100% - 40px);
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: calc(100% - 60px);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: $desktop-container-width;
+  }
+}
+
+@mixin adaptive-width-special {
+  @include adaptive-width;
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: calc(100% - 140px);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: $desktop-container-width;
   }
 }

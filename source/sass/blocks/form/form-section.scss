@@ -1,13 +1,45 @@
+.form-section {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.form-section__container,
+.form-section__title-container {
+  @include adaptive-width-special;
+}
+
+.form-section__container {
+  display: grid;
+}
+
+.form-section__title-container {
+  display: block;
+}
+
+.form-section__item {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: 18px;
+}
+
 .form-section__text {
   @include text-special;
   color: $darkgrey;
 }
 
 .form-section__input {
+  @include text-special;
+
   &::placeholder {
     @include text-special;
     color: $darkgrey;
   }
+}
+
+.form-section__input--textarea {
+  resize: none;
 }
 
 .form-section__title {
@@ -15,4 +47,26 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .form-section__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-section--additional .form-section__container {
+    grid-template-columns: 2fr 2fr;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .form-section__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-section--additional .form-section__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
