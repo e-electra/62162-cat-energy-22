@@ -1,4 +1,32 @@
+.catalog__container {
+  display: grid;
+}
+
 .catalog__item {
   padding: 20px;
   outline: 5px inset red;
+}
+
+
+@media screen and (min-width: $tablet-width) {
+  .catalog {
+    padding-bottom: 68px;
+  }
+
+  .catalog__container {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 140px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .catalog {
+    padding-bottom: 76px;
+  }
+
+  .catalog__container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 80px;
+  }
 }

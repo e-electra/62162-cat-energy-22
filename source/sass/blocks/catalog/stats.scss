@@ -1,0 +1,20 @@
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stats__name,
+.stats__value {
+  display: inline-flex;
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.stats__name {
+  justify-content: flex-start;
+}
+
+.stats__value {
+  justify-content: flex-end;
+  margin: 0;
+}

@@ -43,29 +43,16 @@
 }
 
 .form-section__title {
-  font-family: $fontHeading;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 26px;
+  @include section-title;
 }
 
 @media screen and (min-width: $tablet-width) {
-  .form-section__title {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
   .form-section--additional .form-section__container {
     grid-template-columns: 2fr 2fr;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
-  .form-section__title {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
   .form-section--additional .form-section__container {
     grid-template-columns: repeat(4, 1fr);
   }

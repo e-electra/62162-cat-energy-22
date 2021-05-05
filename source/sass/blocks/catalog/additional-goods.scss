@@ -1,3 +1,45 @@
 .additional-goods__title {
-  @include block-title;
+  @include section-title;
+  @include adaptive-width;
+  padding: 25px 20px 36px;
+}
+
+.additional-goods__container,
+.additional-goods__list {
+  display: grid;
+}
+
+.additional-goods__container {
+  grid-row-gap: 40px;
+}
+
+.additional-goods__list {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .additional-goods__title {
+    padding: 0 0 80px;
+  }
+
+  .additional-goods__container {
+    grid-row-gap: 70px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .additional-goods {
+    padding-bottom: 86px;
+  }
+
+  .additional-goods__container {
+    grid-template-columns: 1fr min-content;
+    grid-column-gap: 80px;
+  }
+
+  .additional-goods__list {
+    max-width: initial;
+  }
 }

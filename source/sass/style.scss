@@ -12,13 +12,14 @@
 @import "blocks/copyright.scss";
 
 // Main
-@import "blocks/main/hero";
-@import "blocks/main/programs";
-@import "blocks/main/program";
-@import "blocks/main/features";
-@import "blocks/main/example";
-@import "blocks/main/achivement";
-@import "blocks/main/slider";
+@import "blocks/main/page-main.scss";
+@import "blocks/main/hero.scss";
+@import "blocks/main/programs.scss";
+@import "blocks/main/program.scss";
+@import "blocks/main/features.scss";
+@import "blocks/main/example.scss";
+@import "blocks/main/achivement.scss";
+@import "blocks/main/slider.scss";
 
 
 // Form
@@ -27,8 +28,10 @@
 @import "blocks/form/form-section.scss";
 
 // Catalog
+@import "blocks/catalog/page-catalog.scss";
 @import "blocks/catalog/additional-goods.scss";
 @import "blocks/catalog/add-good-item.scss";
 @import "blocks/catalog/banner.scss";
 @import "blocks/catalog/catalog.scss";
 @import "blocks/catalog/product.scss";
+@import "blocks/catalog/stats.scss";

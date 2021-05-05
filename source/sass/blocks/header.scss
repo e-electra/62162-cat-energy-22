@@ -1,6 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid $grey;
 }
 
 .header__logo {
@@ -20,20 +21,16 @@
   flex-direction: column;
 }
 
-.header__title,
+.header__title {
+  @include page-title;
+  color: $basicwhite;
+}
+
 .header__subtitle {
   font-weight: 400;
   color: $basicwhite;
   width: calc(100% - 40px);
   margin: 0 auto;
-}
-
-.header__title {
-  font-size: 36px;
-  line-height: 36px;
-}
-
-.header__subtitle {
   font-size: 14px;
   line-height: 14px;
   font-family: $fontHeading;
@@ -56,6 +53,10 @@
 }
 
 @media screen and (min-width: $tablet-width) {
+  .header {
+    border: none;
+  }
+
   .header__nav-wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -78,9 +79,8 @@
   }
 
   .header__title {
-    font-size: 60px;
-    line-height: 60px;
     margin-top: 24px;
+    color: $basicblack;
   }
 
   .header__subtitle {
