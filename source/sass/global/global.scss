@@ -48,6 +48,14 @@ h6 {
   font-family: $fontMain;
 }
 
+.page__title {
+  @include page-title;
+}
+
+.page--main .header {
+  border: none;
+}
+
 .button {
   @include btn;
 }

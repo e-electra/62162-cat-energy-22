@@ -1,0 +1,27 @@
+.page--catalog .banner {
+  width: 100%;
+}
+
+@media screen and (max-width: $mobile-width-only) {
+  .page--catalog .page__title {
+    padding: 28px 0 48px;
+    border-bottom: 1px solid $grey;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .page--catalog .page__title {
+    border: none;
+    padding: 24px 0 180px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .page--catalog .page__title {
+    padding: 34px 0 190px;
+  }
+
+  .page--catalog .banner {
+    width: 245px;
+  }
+}

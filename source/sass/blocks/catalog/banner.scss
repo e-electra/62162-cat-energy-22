@@ -1,24 +1,59 @@
+@mixin flex-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .banner {
   background-image: url("../../img/gift-photo-mobile.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  min-height: 289px;
+
+  @include flex-banner;
 }
 
 .banner__text {
-  font-size: 16px;
-  line-height: 20px;
+  @include text-basic;
   color: $basicwhite;
+  max-width: 160px;
+  text-align: center;
+  margin-top: 48px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet-width) {
   .banner {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 200px;
     background-image: url("../../img/gift-photo-tablet.png");
+  }
+
+  .banner__img {
+    margin-left: 80px;
+  }
+
+  .banner__text {
+    margin: 0 124px 0 0;
+    text-align: left;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $desktop-width) {
   .banner {
+    @include flex-banner;
     background-image: url("../../img/gift-photo-desktop.png");
+  }
+
+  .banner__img,
+  .banner__text {
+    margin: 0;
+  }
+
+  .banner__text {
+    text-align: center;
+    margin-top: 48px;
   }
 }

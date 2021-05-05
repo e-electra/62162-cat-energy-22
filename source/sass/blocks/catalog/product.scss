@@ -1,9 +1,55 @@
+.product {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.product__img-container {
+  align-self: stretch;
+}
+
+.product__img-container,
+.product__description {
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+
+.product__link {
+  flex-basis: 100%;
+}
+
 .product--more {
   background-color: initial;
+  flex-direction: column;
+}
+
+.product--more .product__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto 20px;
+  flex-grow: 1;
+}
+
+.product--more .product__title {
+  max-width: initial;
+  margin: 24px 0 auto;
+}
+
+.product--more .product__text {
+  margin: 8px 0 auto;
+}
+
+.product--more .product__link {
+  margin-top: auto;
 }
 
 .product__title {
   @include text-special;
+  margin-top: 0;
+  font-weight: 400;
+  max-width: 76px;
 }
 
 .product__info,
@@ -13,8 +59,76 @@
 
 @media screen and (min-width: 768px) {
   .product {
+    flex-direction: column;
+    padding: 36px 36px 40px;
+
     &:not(.product--more) {
       background-color: $basicgrey;
     }
+  }
+
+  .product__img-container,
+  .product__description {
+    flex-grow: initial;
+    flex-basis: initial;
+  }
+
+  .product__img-container {
+    position: relative;
+    min-height: 110px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .product__img {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .product__description {
+    margin-top: 34px;
+  }
+
+  .product__title {
+    text-align: center;
+    line-height: 22px;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
+  .product__info {
+    margin: 20px 0 34px;
+  }
+
+  .product__link {
+    flex-basis: initial;
+    margin-top: auto;
+  }
+
+  .product--more {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product--more .product__title {
+    max-width: 134px;
+    margin: 49px 0 0;
+  }
+
+  .product--more .product__text {
+    margin: 24px 0;
+    max-width: 167px;
+    text-align: center;
+  }
+
+  .product--more .product__link {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: $desktop-width) {
+  .product {
+    padding: 30px 30px 40px;
   }
 }

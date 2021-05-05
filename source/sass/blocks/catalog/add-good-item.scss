@@ -1,13 +1,78 @@
 .add-good-item {
   list-style: none;
-  padding: 26px 38px;
+  padding: 12px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   outline: 5px inset green;
 }
 
 .add-good-item__title {
   @include text-special;
+  font-weight: 400;
+  margin: 0;
 }
 
 .add-good-item__description {
   @include text-basic;
+  margin: 12px 0 16px;
+  display: flex;
+}
+
+.add-good-item__link {
+  margin-top: auto;
+}
+
+
+@media screen and (min-width: $tablet-width) {
+  .add-good-item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 28px 40px;
+  }
+
+  .add-good-item__title,
+  .add-good-item__description {
+    flex-basis: 50%;
+    max-width: 50%;
+    flex-grow: 1;
+  }
+
+  .add-good-item__link {
+    flex-basis: 100%;
+    max-width: 100%;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .add-good-item {
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 16px;
+
+    &:last-child {
+      padding: 16px 0 0;
+    }
+  }
+
+  .add-good-item__title,
+  .add-good-item__description,
+  .add-good-item__link {
+    flex-basis: initial;
+    max-width: initial;
+    flex-grow: 1;
+    margin-right: 40px;
+  }
+
+  .add-good-item__description {
+    flex-grow: 0;
+    width: 288px;
+  }
+
+  .add-good-item__link {
+    width: 244px;
+    flex-grow: 0;
+    margin-right: 0;
+  }
 }
