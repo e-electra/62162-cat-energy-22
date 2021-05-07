@@ -3,7 +3,8 @@
   padding: 24px 20px 18px;
   box-sizing: border-box;
   margin: 0 auto;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
 
   &:not(:first-child) {
     margin-top: 20px;
@@ -16,6 +17,9 @@
   position: relative;
   width: 50px;
   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .program__title {
@@ -23,12 +27,18 @@
   line-height: 37px;
   text-transform: uppercase;
   font-weight: 400;
+  margin: 0 0 0 20px;
+  align-self: center;
 }
 
 .program__description {
   font-size: 14px;
   line-height: 18px;
   color: $darkgrey;
+  margin: 20px 0 0;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $bordergrey;
 }
 
 .program__link {
@@ -36,9 +46,17 @@
   font-family: $fontHeading;
   font-size: 16px;
   line-height: 18px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   position: relative;
   text-transform: uppercase;
+  margin-top: 16px;
+
+  &::after {
+    content: url("../../../img/icons/icon_arrow.svg");
+    margin-left: 16px;
+    width: 32px;
+  }
 }
 
 .program--slim .program__icon {
@@ -49,32 +67,51 @@
   max-width: 67px;
 }
 
-@media screen and (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .program {
+    padding: 78px 28px 52px 52px;
+    align-items: center;
+
     &:not(:first-child) {
       margin-top: 30px;
     }
   }
 
   .program__image {
+    order: 3;
     width: 200px;
     height: 200px;
+    flex-basis: 200px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .program__title {
+    order: 1;
     font-size: 36px;
     line-height: 36px;
+    margin-left: 0;
   }
 
-  .program__desription {
+  .program__description {
+    order: 2;
     font-size: 16px;
     line-height: 24px;
     color: $basicblack;
+    border: none;
+  }
+
+  .program__title,
+  .program__description {
+    flex-basis: 58%;
   }
 
   .program__link {
+    order: 4;
     font-size: 20px;
     line-height: 29px;
+    flex-basis: 100%;
   }
 
   .program__icon {
@@ -88,18 +125,51 @@
   .program--pro .program__icon {
     max-width: 268px;
   }
+
+  .program--pro .program__image {
+    margin-left: 36px;
+  }
 }
 
 
-@media screen and (min-width: 1024px) {
+@media (min-width: $desktop-width) {
+  .program {
+    padding: 47px 52px;
+  }
+
   .program__image {
+    flex-basis: 100px;
     width: 100px;
     height: 100px;
+    margin: 0;
+    order: 1;
+  }
+
+  .program--pro .program__image {
+    margin: 0;
+  }
+
+  .program__title,
+  .program__description {
+    flex-basis: auto;
   }
 
   .program__title {
+    order: 2;
     font-size: 36px;
     line-height: 36px;
+    margin-left: 62px;
+  }
+
+  .program__description {
+    order: 3;
+    padding-bottom: 0;
+  }
+
+  .program__link {
+    order: 4;
+    margin-top: 24px;
+    flex-basis: auto;
   }
 
   .program--slim .program__icon {
