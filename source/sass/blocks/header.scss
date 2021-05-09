@@ -203,6 +203,14 @@
 
   .header__logo {
     height: 51px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .header__icon {

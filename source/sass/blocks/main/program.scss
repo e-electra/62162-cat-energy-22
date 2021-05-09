@@ -57,6 +57,10 @@
     margin-left: 16px;
     width: 32px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .program--slim .program__icon {

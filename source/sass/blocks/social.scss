@@ -7,3 +7,15 @@
   margin: 0;
   width: 130px;
 }
+
+.social__link {
+  color: $social;
+
+  &:hover {
+    color: $basicgreen;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
