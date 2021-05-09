@@ -12,47 +12,297 @@
 
 .form-section__container {
   display: grid;
+  grid-row-gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    grid-row-gap: 20px;
+  }
 }
 
 .form-section__title-container {
   display: block;
 }
 
+.form-section__title-text {
+  display: inline-flex;
+  max-width: 200px;
+  padding: 0 20px 0 0;
+  background-color: $basicwhite;
+
+  @media (min-width: $tablet-width) {
+    max-width: 512px;
+    padding: 0 40px;
+    margin-left: -40px;
+  }
+}
+
+.form-section__title {
+  position: relative;
+  display: flex;
+  flex-basis: 100%;
+  z-index: 1;
+  margin-top: 0;
+
+  @include section-title;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: -25%;
+    z-index: -1;
+    width: 90%;
+    right: 0;
+    margin: auto;
+    height: 2px;
+    background-color: $basicgreen;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 100%;
+      bottom: -8px;
+    }
+  }
+}
+
 .form-section__item {
+  position: relative;
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-column-gap: 18px;
+  align-content: center;
+  min-height: 40px;
 }
 
 .form-section__text {
   @include text-special;
   color: $darkgrey;
+  align-self: center;
 }
 
 .form-section__input {
   @include text-special;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid $lightgrey3;
+  padding: 14px;
 
   &::placeholder {
     @include text-special;
     color: $darkgrey;
   }
+
+  &:hover {
+    border-color: $lightgrey;
+  }
+
+  &:focus {
+    border-color: $darkgrey;
+  }
+}
+
+.form-section__input--invalid {
+  border-color: $error;
+
+  &:hover,
+  &:focus {
+    border-color: $error;
+  }
+}
+
+.form-section__input:active + .form-section__icon,
+.form-section__input:focus + .form-section__icon {
+  color: $basicgreen;
+}
+
+.form-section__input--invalid + .form-section__icon {
+  color: $error;
+}
+
+.form-section__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 20px;
+  color: $basicblack;
 }
 
 .form-section__input--textarea {
   resize: none;
 }
 
-.form-section__title {
-  @include section-title;
+.form-section--program .form-section__item {
+  display: flex;
 }
 
-@media screen and (min-width: $tablet-width) {
+.form-section__radio,
+.form-section__check {
+  display: none;
+}
+
+.form-section--program .form-section__text,
+.form-section--additional .form-section__text {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-content: center;
+  vertical-align: middle;
+}
+
+.form-section--program .form-section__text {
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid $lightgrey;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.form-section--additional .form-section__text {
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid $lightgrey;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.form-section__text-content {
+  margin-left: 20px;
+}
+
+.form-section--program .form-section__item:hover,
+.form-section--additional .form-section__item:hover {
+  cursor: pointer;
+}
+
+.form-section__item:hover .form-section__radio:not(:checked) + .form-section__text,
+.form-section__item:hover .form-section__check:not(:checked) + .form-section__text {
+  &::before {
+    border-color: $lightgrey4;
+  }
+}
+
+
+.form-section__item .form-section__radio:disabled + .form-section__text,
+.form-section__item .form-section__check:disabled + .form-section__text {
+  opacity: 0.3;
+  pointer-events: none;
+
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.form-section--program .form-section__text-content,
+.form-section--additional .form-section__text-content {
+  display: flex;
+  align-items: center;
+}
+
+.form-section__radio:checked + .form-section__text {
+  &::before {
+    border-color: $basicgreen;
+
+    background-image: radial-gradient($basicgreen 0, $basicgreen 6px, $basicwhite 7px, $basicwhite 100%);
+
+    @media (min-width: $tablet-width) {
+      background-image: radial-gradient($basicgreen 0, $basicgreen 9px, $basicwhite 10px, $basicwhite 100%);
+    }
+  }
+}
+
+.form-section__check:checked + .form-section__text {
+  &::before {
+    border-color: $basicgreen;
+
+    background: url("../../../img/icons/icon_tick.svg") no-repeat center;
+    background-size: 21px;
+  }
+}
+
+
+.form-section--basic,
+.form-section--program {
+  border-bottom: 1px solid $mediumgrey;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.form-section--basic {
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.form-section--program {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  grid--template-rows: repeat(3, 40px);
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.form-section--program .form-section__container {
+  @media (min-width: $tablet-width) {
+    padding: 24px;
+    box-sizing: border-box;
+    border: 1px solid $mediumgrey;
+  }
+}
+
+.form-section--program .form-section__item {
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+}
+
+
+.form-section--contact .form-section__title {
+  margin: 30px auto 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.form-section--contact .form-section__container {
+  padding-bottom: 24px;
+}
+
+.form-section--comment .form-section__container {
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
   .form-section--additional .form-section__container {
     grid-template-columns: 2fr 2fr;
   }
 }
 
-@media screen and (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .form-section--additional .form-section__container {
     grid-template-columns: repeat(4, 1fr);
   }

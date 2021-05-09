@@ -1,4 +1,4 @@
-@media screen and (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .page--form .header {
     border: none;
   }
@@ -9,7 +9,7 @@
   }
 }
 
-@media screen and (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .page--form .navigation__link {
     color: $basicblack;
   }

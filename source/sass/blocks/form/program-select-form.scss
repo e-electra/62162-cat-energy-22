@@ -7,12 +7,38 @@
   @include adaptive-width-special;
 }
 
+.program-select-form__controls-container {
+  margin-top: 34px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 54px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+  }
+}
+
 .program-select-form__title {
   @include block-title;
 }
 
 .program-select-form__description {
   @include text-special;
+
+  @media (min-width: $tablet-width) {
+    max-width: 323px;
+  }
+}
+
+.program-select-form__form {
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+  }
 }
 
 .program-select-form__form,
@@ -25,7 +51,7 @@
   line-height: 16px;
 }
 
-@media screen and (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .program-select-form {
     padding-bottom: 72px;
   }
@@ -36,6 +62,7 @@
 
   .program-select-form__button {
     justify-self: start;
+    width: 282px;
   }
 
   .program-select-form__hint {
@@ -44,13 +71,12 @@
   }
 
   .program-select-form__controls-container {
-    width: calc(100% - 140px);
     grid-template-columns: max-content 1fr;
     grid-column-gap: 60px;
   }
 }
 
-@media screen and (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .program-select-form {
     padding-bottom: 82px;
   }
