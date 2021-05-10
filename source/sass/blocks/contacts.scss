@@ -1,6 +1,6 @@
 .contacts__text {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   padding: 28px 20px;
   background-color: $basicwhite;
 }
@@ -24,14 +24,24 @@
 }
 
 
-@media screen and (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .contacts__greet {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 23px;
+    margin-right: auto;
+    flex-basis: 170px;
   }
 
   .contacts__address {
     font-size: 16px;
+    margin-left: auto;
+    text-align: right;
+    flex-basis: 160px;
+  }
+
+  .contacts__street {
+    display: inline-block;
+    margin-bottom: 20px;
   }
 
   .contacts__map {
@@ -39,7 +49,7 @@
   }
 }
 
-@media screen and (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .contacts {
     position: relative;
   }
@@ -53,7 +63,7 @@
     grid-column-gap: 87px;
   }
 
-  .contacts__greet {
-    line-height: 21px;
+  .contacts__address {
+    text-align: left;
   }
 }

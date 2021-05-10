@@ -1,16 +1,11 @@
-.navigation {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -3px;
-}
-
 .navigation__list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
+  min-height: 66px;
 }
 
 .navigation__item {
@@ -19,15 +14,20 @@
   font-family: $fontHeading;
   font-weight: 500;
   text-transform: uppercase;
-  outline: 5px solid rgba(0, 255, 200, 0.8);
-  outline-offset: -5px;
+  min-height: 66px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-top: 1px solid $grey;
 }
 
 .navigation__link {
   color: $basicblack;
 }
 
-@media screen and (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .navigation__list {
     align-items: center;
     flex-direction: row;
@@ -39,6 +39,11 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    border: none;
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
   }
 
   .navigation__toggle {
@@ -47,7 +52,7 @@
 }
 
 
-@media screen and (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .navigation__item {
     font-size: 20px;
     line-height: 29px;

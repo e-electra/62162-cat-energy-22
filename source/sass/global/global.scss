@@ -9,13 +9,14 @@ a {
 
 .container {
   margin: 0 auto;
+  width: 100%;
 
-  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     max-width: calc(100% - 60px);
   }
 
-  @media screen and (min-width: $desktop-width) {
-    max-width: $desktop-width - 220px;
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-container-width;
   }
 }
 
@@ -54,6 +55,7 @@ h6 {
 
 .page--main .header {
   border: none;
+  overflow-x: hidden;
 }
 
 .button {
