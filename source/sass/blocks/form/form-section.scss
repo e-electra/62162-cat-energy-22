@@ -135,6 +135,7 @@
 
 .form-section--program .form-section__item {
   display: flex;
+  align-items: center;
 }
 
 .form-section__radio,
@@ -271,11 +272,6 @@
     box-sizing: border-box;
     border: 1px solid $mediumgrey;
   }
-}
-
-.form-section--program .form-section__item {
-  grid-template-columns: 40px 1fr;
-  align-items: center;
 }
 
 
