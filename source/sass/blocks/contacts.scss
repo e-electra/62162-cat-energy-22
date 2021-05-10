@@ -1,8 +1,12 @@
+.contacts {
+  background-color: $basicgrey;
+}
+
 .contacts__text {
   display: flex;
   justify-content: space-between;
   padding: 28px 20px;
-  background-color: $basicwhite;
+  background-color: $basicgrey;
 }
 
 .contacts__map {
@@ -61,6 +65,12 @@
     padding: 60px 76px;
     max-width: 570px;
     grid-column-gap: 87px;
+    background-color: $basicwhite;
+  }
+
+  .contacts,
+  .contacts__text {
+    background-color: $basicwhite;
   }
 
   .contacts__address {

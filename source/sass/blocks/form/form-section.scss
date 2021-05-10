@@ -44,26 +44,6 @@
   margin-top: 0;
 
   @include section-title;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: -25%;
-    z-index: -1;
-    width: 90%;
-    right: 0;
-    margin: auto;
-    height: 2px;
-    background-color: $basicgreen;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::after {
-      width: 100%;
-      bottom: -8px;
-    }
-  }
 }
 
 .form-section__item {

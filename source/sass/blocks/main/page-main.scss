@@ -2,4 +2,10 @@
   .page--main .navigation__link {
     color: $basicwhite;
   }
+
+  .page--main .navigation__item--active .navigation__link {
+    &::after {
+      background-color: $basicwhite;
+    }
+  }
 }

@@ -8,6 +8,13 @@
   display: inline-flex;
   flex-basis: 50%;
   flex-grow: 1;
+  padding: 1px 0;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 6px 0;
+    border-bottom: 1px solid $grey;
+  }
 }
 
 .stats__name {
