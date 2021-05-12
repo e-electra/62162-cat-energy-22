@@ -11,7 +11,7 @@
     <header class="header">
       <div class="header__nav-wrapper container">
         <div class="header__top">
-          <a href="#" class="header__logo">
+          <a href="index.html" class="header__logo">
             <img class="header__icon" src="img/logo-mobile.svg" alt="Cat Energy" width="33" height="37">
             <picture class="header__icon--text">
               <source srcset="img/logo-text.svg" media="(max-width: 767px)" />
@@ -26,13 +26,13 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="index.html" class="navigation__link">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a href="catalog.html" class="navigation__link">Каталог продукции</a>
+              </li>
               <li class="navigation__item navigation__item--active">
-                <a href="#" class="navigation__link">Главная</a>
-              </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">Каталог продукции</a>
-              </li>
-              <li class="navigation__item">
                 <a href="form.html" class="navigation__link">Подбор программы</a>
               </li>
             </ul>
@@ -163,7 +163,7 @@
                 <span class="form-section__title-text">
                   Дополнительно
                 </span>
-            </span>
+              </span>
             </h3>
             <div class="form-section__container container">
               <label class="form-section__item">
@@ -199,10 +199,10 @@
         </form>
       </section>
       <section class="contacts">
-        <div class="container">
+        <div class="contacts__container container">
           <div class="contacts__text">
-            <p class="contacts__greet">Приглашаем к сотрудничеству дилеров! </p>
-            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <p class="contacts__greet">Приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__address"><span class="contacts__street">ул. Большая Конюшенная, д. 19/8 </span><span class="contacts__city">Санкт-Петербург</span></p>
           </div>
         </div>
         <div class="contacts__map">

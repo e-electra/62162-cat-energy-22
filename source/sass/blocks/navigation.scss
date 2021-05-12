@@ -49,6 +49,21 @@
   .navigation__toggle {
     display: none;
   }
+
+  .navigation__item--active .navigation__link {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      box-sizing: border-box;
+      height: 2px;
+      left: 0;
+      bottom: -8px;
+      background-color: $basicgreen;
+    }
+  }
 }
 
 

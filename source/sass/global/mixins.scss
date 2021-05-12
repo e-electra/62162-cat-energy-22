@@ -59,10 +59,30 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: -8px;
+    z-index: -1;
+    width: 90%;
+    right: 0;
+    margin: auto;
+    height: 2px;
+    background-color: $basicgreen;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+
+    &::after {
+      width: 100%;
+      bottom: -8px;
+    }
   }
 }
 
