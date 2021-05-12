@@ -27,6 +27,7 @@
 .product--more {
   background-color: initial;
   flex-direction: column;
+  border: 1px solid $grey;
 }
 
 .product--more .product__addon {
@@ -84,10 +85,6 @@
     &:not(.product--more) {
       background-color: $basicgrey;
     }
-  }
-
-  .product--more {
-    border: 1px solid $grey;
   }
 
   .product__img-container,
