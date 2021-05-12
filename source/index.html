@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon/152.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="page__body">
@@ -14,7 +17,7 @@
             <img class="header__icon" src="img/logo-mobile.svg" alt="Cat Energy" width="33" height="37">
             <picture class="header__icon--text">
               <source srcset="img/logo-text.svg" media="(max-width: 767px)" />
-              <source srcset="img/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1024px)" />
+              <source srcset="img/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1220px)" />
               <source srcset="img/logo-desktop.svg" media="(min-width: 1220px)" />
               <img src="img/logo-text.svg" alt="Cat Energy" />
             </picture>
@@ -44,9 +47,9 @@
           </div>
           <div class="hero">
             <picture class="hero__img">
-              <source srcset="img/index-can-tablet.png" media="(min-width: 768px) and (max-width: 1240px)" />
-              <source srcset="img/index-can-desktop.png" media="(min-width: 1240px)"/>
-              <img src="img/index-can-mobile.png" alt="Cat Energy курица" />
+              <source srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x, img/index-can-tablet@3x.png 3x" media="(min-width: 768px) and (max-width: 1240px)" />
+              <source srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x, img/index-can-desktop@3x.png 3x" media="(min-width: 1240px)"/>
+              <img src="img/index-can-mobile.png" srcset="img/index-background-mobile.png 1x, img/index-can-mobile@2x.png 2x" alt="Cat Energy курица" />
             </picture>
           </div>
           <div class="header__button-container container">

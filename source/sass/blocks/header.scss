@@ -128,6 +128,7 @@
   font-weight: 400;
   color: $basicwhite;
   margin: 28px auto 0;
+  width: 100%;
   text-align: center;
   font-size: 14px;
   line-height: 14px;
@@ -141,6 +142,7 @@
   flex-direction: column;
   min-height: 480px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .header__branding-container {
@@ -224,6 +226,7 @@
 
   .header__title {
     margin-top: 24px;
+    max-width: 414px;
     color: $basicblack;
   }
 
@@ -231,13 +234,13 @@
     font-size: 20px;
     line-height: 20px;
     margin-top: 40px;
+    width: 100%;
   }
 
   .header__title,
   .header__subtitle {
     text-align: left;
     margin-left: 87px;
-    max-width: 414px;
     color: $basicblack;
   }
 
@@ -278,12 +281,12 @@
   }
 
   .header__title {
+    max-width: 414px;
     margin-top: 61px;
   }
 
   .header__title,
   .header__subtitle {
-    max-width: 414px;
     margin-left: 80px;
   }
 }

@@ -88,8 +88,6 @@
 
   .product--more {
     border: 1px solid $grey;
-    align-items: center;
-    justify-content: center;
   }
 
   .product__img-container,
@@ -128,6 +126,11 @@
   .product__link {
     flex-basis: initial;
     margin-top: auto;
+  }
+
+  .product--more {
+    align-items: center;
+    justify-content: center;
   }
 
   .product--more .product__title {
