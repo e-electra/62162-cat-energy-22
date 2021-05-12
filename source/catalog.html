@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon/152.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="page__body">
@@ -60,12 +63,14 @@
     <section class="catalog">
       <div class="catalog__container container">
         <article class="catalog__item product">
-          <picture class="product__img-container">
-            <source srcset="img/small-chicken-mobile.png" media="(max-width: 767px)" />
-            <source srcset="img/small-chicken-tablet.png" media="(min-width: 768px) and (max-width: 1024px)" />
-            <source srcset="img/small-chicken-desktop.png" media="(min-width: 1220px)" />
-            <img class="product__img" src="img/small-chicken-mobile.png" alt="Small chicken can" />
-          </picture>
+          <div class="product__img-container">
+            <picture>
+              <source srcset="img/small-chicken-mobile.png 1x, img/small-chicken-mobile@2x.png 2x" media="(max-width: 767px)" />
+              <source srcset="img/small-chicken-tablet.png 1x, img/small-chicken-tablet@2x.png 2x" media="(min-width: 768px) and (max-width: 1024px)" />
+              <source srcset="img/small-chicken-desktop.png 1x, img/small-chicken-desktop@2x.png 2x" media="(min-width: 1220px)" />
+              <img class="product__img" src="img/small-chicken-mobile.png" srcset="img/small-chicken-mobile.png 1x, img/small-chicken-mobile@2x.png 2x" alt="Small chicken can" />
+            </picture>
+          </div>
           <div class="product__description">
             <h2 class="product__title">Cat Energy PRO 500 г</h2>
             <dl class="product__info stats">
@@ -80,12 +85,14 @@
           <a href="#" class="product__link button">Заказать</a>
         </article>
         <article class="catalog__item product">
-          <picture class="product__img-container">
-            <source srcset="img/big-chicken-mobile.png" media="(max-width: 767px)" />
-            <source srcset="img/big-chicken-tablet.png" media="(min-width: 768px) and (max-width: 1024px)" />
-            <source srcset="img/big-chicken-desktop.png" media="(min-width: 1220px)" />
-            <img class="product__img" src="img/big-chicken-mobile.png" alt="Big chicken can" />
-          </picture>
+          <div class="product__img-container">
+            <picture>
+              <source srcset="img/big-chicken-mobile.png 1x, img/big-chicken-mobile@2x.png 2x" media="(max-width: 767px)" />
+              <source srcset="img/big-chicken-tablet.png 1x, img/big-chicken-tablet@2x.png 2x" media="(min-width: 768px) and (max-width: 1024px)" />
+              <source srcset="img/big-chicken-desktop.png 1x, img/big-chicken-desktop@2x.png 2x" media="(min-width: 1220px)" />
+              <img class="product__img" src="img/big-chicken-mobile.png" srcset="img/big-chicken-mobile.png 1x, img/big-chicken-mobile@2x.png 2x" alt="Big chicken can" />
+            </picture>
+          </div>
           <div class="product__description">
             <h2 class="product__title">Cat Energy PRO 1000 г</h2>
             <dl class="product__info stats">
@@ -100,12 +107,14 @@
           <a href="#" class="product__link button">Заказать</a>
         </article>
         <article class="catalog__item product">
-          <picture class="product__img-container">
-            <source srcset="img/small-fish-mobile.png" media="(max-width: 767px)" />
-            <source srcset="img/small-fish-tablet.png" media="(min-width: 768px) and (max-width: 1024px)" />
-            <source srcset="img/small-fish-desktop.png" media="(min-width: 1220px)" />
-            <img class="product__img" src="img/small-fish-mobile.png" alt="Small fish can" />
-          </picture>
+          <div class="product__img-container">
+            <picture>
+              <source srcset="img/small-fish-mobile.png 1x, img/small-fish-mobile@2x.png 2x" media="(max-width: 767px)" />
+              <source srcset="img/small-fish-tablet.png 1x, img/small-fish-tablet@2x.png 2x" media="(min-width: 768px) and (max-width: 1024px)" />
+              <source srcset="img/small-fish-desktop.png 1x, img/small-fish-desktop@2x.png 2x" media="(min-width: 1220px)" />
+              <img class="product__img" src="img/small-fish-mobile.png" srcset="img/small-fish-mobile.png 1x, img/small-fish-mobile@2x.png 2x" alt="Small fish can" />
+            </picture>
+          </div>
           <div class="product__description">
             <h2 class="product__title">Cat Energy PRO 500 г</h2>
             <dl class="product__info stats">
@@ -120,12 +129,14 @@
           <a href="#" class="product__link button">Заказать</a>
         </article>
         <article class="catalog__item product">
-          <picture class="product__img-container">
-            <source srcset="img/big-fish-mobile.png" media="(max-width: 767px)" />
-            <source srcset="img/big-fish-tablet.png" media="(min-width: 768px) and (max-width: 1024px)" />
-            <source srcset="img/big-fish-desktop.png" media="(min-width: 1220px)" />
-            <img class="product__img" src="img/big-fish-mobile.png" alt="Big fish can" />
-          </picture>
+          <div class="product__img-container">
+            <picture>
+              <source srcset="img/big-fish-mobile.png 1x, img/big-fish-mobile@2x.png 2x" media="(max-width: 767px)" />
+              <source srcset="img/big-fish-tablet.png 1x, img/big-fish-tablet@2x.png 2x" media="(min-width: 768px) and (max-width: 1024px)" />
+              <source srcset="img/big-fish-desktop.png 1x, img/big-fish-desktop@2x.png 2x" media="(min-width: 1220px)" />
+              <img class="product__img" src="img/big-fish-mobile.png" srcset="img/big-fish-mobile.png 1x, img/big-fish-mobile@2x.png 2x" alt="Big fish can" />
+            </picture>
+          </div>
           <div class="product__description">
             <h2 class="product__title">Cat Energy PRO 1000 г</h2>
             <dl class="product__info stats">
@@ -140,12 +151,14 @@
           <a href="#" class="product__link button">Заказать</a>
         </article>
         <article class="catalog__item product">
-          <picture class="product__img-container">
-            <source srcset="img/small-buckwheat-mobile.png" media="(max-width: 767px)" />
-            <source srcset="img/small-buckwheat-tablet.png" media="(min-width: 768px) and (max-width: 1024px)" />
-            <source srcset="img/small-buckwheat-desktop.png" media="(min-width: 1220px)" />
-            <img class="product__img" src="img/small-buckwheat-mobile.png" alt="Small buckwheat can" />
-          </picture>
+          <div class="product__img-container">
+            <picture>
+              <source srcset="img/small-buckwheat-mobile.png 1x, img/small-buckwheat-mobile@2x.png 2x" media="(max-width: 767px)" />
+              <source srcset="img/small-buckwheat-tablet.png 1x, img/small-buckwheat-tablet@2x.png 2x" media="(min-width: 768px) and (max-width: 1024px)" />
+              <source srcset="img/small-buckwheat-desktop.png 1x, img/small-buckwheat-desktop@2x.png 2x" media="(min-width: 1220px)" />
+              <img class="product__img" src="img/small-buckwheat-mobile.png" srcset="img/small-buckwheat-mobile.png 1x, img/small-buckwheat-mobile@2x.png 2x" alt="Small buckwheat can" />
+            </picture>
+          </div>
           <div class="product__description">
             <h2 class="product__title">Cat Energy Slim 500 г</h2>
             <dl class="product__info stats">
@@ -160,12 +173,14 @@
           <a href="#" class="product__link button">Заказать</a>
         </article>
         <article class="catalog__item product">
-          <picture class="product__img-container">
-            <source srcset="img/big-buckwheat-mobile.png" media="(max-width: 767px)" />
-            <source srcset="img/big-buckwheat-tablet.png" media="(min-width: 768px) and (max-width: 1024px)" />
-            <source srcset="img/big-buckwheat-desktop.png" media="(min-width: 1220px)" />
-            <img class="product__img" src="img/big-buckwheat-mobile.png" alt="Big buckwheat can" />
-          </picture>
+          <div class="product__img-container">
+            <picture>
+              <source srcset="img/big-buckwheat-mobile.png 1x img/big-buckwheat-mobile@2x.png 2x" media="(max-width: 767px)" />
+              <source srcset="img/big-buckwheat-tablet.png 1x, img/big-buckwheat-tablet@2x.png 2x" media="(min-width: 768px) and (max-width: 1024px)" />
+              <source srcset="img/big-buckwheat-desktop.png 1x, img/big-buckwheat-desktop@2x.png 2x" media="(min-width: 1220px)" />
+              <img class="product__img" src="img/big-buckwheat-mobile.png" srcset="img/big-buckwheat-mobile.png 1x img/big-buckwheat-mobile@2x.png 2x" alt="Big buckwheat can" />
+            </picture>
+          </div>
           <div class="product__description">
             <h2 class="product__title">Cat Energy Slim 1000 г</h2>
             <dl class="product__info stats">
@@ -180,12 +195,14 @@
           <a href="#" class="product__link button">Заказать</a>
         </article>
         <article class="catalog__item product">
-          <picture class="product__img-container">
-            <source srcset="img/small-rice-mobile.png" media="(max-width: 767px)" />
-            <source srcset="img/small-rice-tablet.png" media="(min-width: 768px) and (max-width: 1024px)" />
-            <source srcset="img/small-rice-desktop.png" media="(min-width: 1220px)" />
-            <img class="product__img" src="img/small-rice-mobile.png" alt="Small rice can" />
-          </picture>
+          <div class="product__img-container">
+            <picture>
+              <source srcset="img/small-rice-mobile.png 1x, img/small-rice-mobile@2x.png 2x" media="(max-width: 767px)" />
+              <source srcset="img/small-rice-tablet.png 1x, img/small-rice-tablet@2x.png 2x" media="(min-width: 768px) and (max-width: 1024px)" />
+              <source srcset="img/small-rice-desktop.png 1x, img/small-rice-desktop@2x.png 2x" media="(min-width: 1220px)" />
+              <img class="product__img" src="img/small-rice-mobile.png" srcset="img/small-rice-mobile.png 1x, img/small-rice-mobile@2x.png 2x" alt="Small rice can" />
+            </picture>
+          </div>
           <div class="product__description">
             <h2 class="product__title">Cat Energy Slim 500 г</h2>
             <dl class="product__info stats">
@@ -216,7 +233,7 @@
     </section>
     <section class="additional-goods">
       <h2 class="additional-goods__title">
-       <span class="additional-goods__title-container container">
+        <span class="additional-goods__title-container container">
           <span class="additional-goods__title-text">
             Дополнительные товары
           </span>
