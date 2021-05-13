@@ -64,11 +64,11 @@
 }
 
 .program--slim .program__icon {
-  max-width: 36px;
+  width: 36px;
 }
 
 .program--pro .program__icon {
-  max-width: 67px;
+  width: 67px;
 }
 
 @media (min-width: $tablet-width) {
@@ -118,16 +118,12 @@
     flex-basis: 100%;
   }
 
-  .program__icon {
-    max-width: 100%;
-  }
-
   .program--slim .program__icon {
-    max-width: 140px;
+    width: 140px;
   }
 
   .program--pro .program__icon {
-    max-width: 268px;
+    width: 268px;
   }
 
   .program--pro .program__image {
@@ -177,10 +173,10 @@
   }
 
   .program--slim .program__icon {
-    max-width: 70px;
+    width: 70px;
   }
 
   .program--pro .program__icon {
-    max-width: 134px;
+    width: 134px;
   }
 }
