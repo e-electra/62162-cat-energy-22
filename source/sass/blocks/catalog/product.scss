@@ -12,6 +12,9 @@
 
 .product__img-container {
   align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product__img-container,
@@ -103,6 +106,9 @@
   .product__img {
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   .product__description {
