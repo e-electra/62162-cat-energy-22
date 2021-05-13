@@ -27,6 +27,7 @@
 .product--more {
   background-color: initial;
   flex-direction: column;
+  border: 1px solid $grey;
 }
 
 .product--more .product__addon {
@@ -86,12 +87,6 @@
     }
   }
 
-  .product--more {
-    border: 1px solid $grey;
-    align-items: center;
-    justify-content: center;
-  }
-
   .product__img-container,
   .product__description {
     flex-grow: initial;
@@ -128,6 +123,11 @@
   .product__link {
     flex-basis: initial;
     margin-top: auto;
+  }
+
+  .product--more {
+    align-items: center;
+    justify-content: center;
   }
 
   .product--more .product__title {
