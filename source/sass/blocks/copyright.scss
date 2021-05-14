@@ -11,3 +11,20 @@
     margin-right: 20px;
   }
 }
+
+.copyright__icon {
+  color: $social;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+
+  &:hover .copyright__icon {
+    color: $basicgreen;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
