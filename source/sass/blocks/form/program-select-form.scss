@@ -4,7 +4,7 @@
 
 .program-select-form__top {
   display: flex;
-  gap: 80px;
+  flex-direction: column;
 }
 
 .program-select-form__top .form-section__container {
@@ -69,6 +69,10 @@
 
   .program-select-form__form {
     grid-row-gap: 72px;
+  }
+
+  .program-select-form__top {
+    gap: 80px;
   }
 
   .program-select-form__button {
