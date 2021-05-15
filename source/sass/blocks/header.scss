@@ -183,7 +183,7 @@
     flex-basis: 174px;
   }
 
-  .header__icon--text {
+  .header__icon--text .header__icon-content {
     width: 174px;
   }
 
@@ -267,7 +267,7 @@
     height: 60px;
   }
 
-  .header__icon--text {
+  .header__icon--text .header__icon-content {
     width: 202px;
   }
 
@@ -287,6 +287,10 @@
 
   .header__title,
   .header__subtitle {
+    margin-left: 80px;
+  }
+
+  .header__button {
     margin-left: 80px;
   }
 }

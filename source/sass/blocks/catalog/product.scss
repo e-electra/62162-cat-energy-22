@@ -30,9 +30,6 @@
 .product--more {
   background-color: initial;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid $grey;
 }
 
 .product--more .product__addon {
@@ -93,6 +90,8 @@
   }
 
   .product--more {
+    align-items: center;
+    justify-content: center;
     border: 1px solid $grey;
   }
 

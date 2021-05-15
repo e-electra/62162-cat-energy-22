@@ -2,6 +2,17 @@
   padding-bottom: 32px;
 }
 
+.program-select-form__top {
+  display: flex;
+  gap: 80px;
+}
+
+.program-select-form__top .form-section__container {
+  width: 100%;
+  max-width: initial;
+}
+
+.program-select-form__top,
 .program-select-form__title-container,
 .program-select-form__controls-container {
   @include adaptive-width-special;
@@ -83,6 +94,10 @@
 
   .program-select-form__form {
     grid-row-gap: 72px;
+  }
+
+  .program-select-form__top {
+    flex-direction: row;
   }
 
   .program-select-form__button {

@@ -52,15 +52,13 @@
   text-transform: uppercase;
   margin-top: 16px;
 
-  &::after {
-    content: url("../../../img/icons/icon_arrow.svg");
-    margin-left: 16px;
-    width: 32px;
-  }
-
   &:active {
     opacity: 0.3;
   }
+}
+
+.program__link-addon {
+  margin-left: 16px;
 }
 
 .program--slim .program__icon {

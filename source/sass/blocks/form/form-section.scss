@@ -213,7 +213,7 @@
   &::before {
     border-color: $basicgreen;
 
-    background: url("../../../img/icons/icon_tick.svg") no-repeat center;
+    background: url("../../../img/icon_tick.svg") no-repeat center;
     background-size: 21px;
   }
 }
@@ -281,5 +281,26 @@
 @media (min-width: $desktop-width) {
   .form-section--additional .form-section__container {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .form-section--basic,
+  .form-section--program {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+
+  .form-section--basic {
+    margin-left: auto;
+  }
+
+  .form-section--program {
+    margin-right: auto;
+  }
+
+  .form-section--program .form-section__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
   }
 }
