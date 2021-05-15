@@ -2,7 +2,7 @@
   position: absolute;
   z-index: -1;
   display: flex;
-  background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url("../../img/index-background-mobile.png") no-repeat;
+  background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url("../../img/index-background-mobile.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 302px;
@@ -10,7 +10,7 @@
   flex-direction: column;
 
   @media (min-resolution: 2dppx) {
-    background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url("../../img/index-background-mobile@2x.png") no-repeat;
+    background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url("../../img/index-background-mobile@2x.jpg") no-repeat;
     background-size: cover;
     background-position: center;
   }
@@ -50,14 +50,14 @@
 @media (min-width: $desktop-width) {
   .hero {
     right: -50%;
-    background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url("../../img/index-background-desktop.png") no-repeat;
+    background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url("../../img/index-background-desktop.jpg") no-repeat;
     top: -148px;
     background-position: center;
     background-size: cover;
     height: 694px;
 
     @media (min-resolution: 2dppx) {
-      background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url("../../img/index-background-desktop@2x.png") no-repeat;
+      background: linear-gradient(0deg, rgba($basicgreen, 0.85), rgba($basicgreen, 0.85)), url("../../img/index-background-desktop@2x.jpg") no-repeat;
       background-size: cover;
       background-position: center;
     }

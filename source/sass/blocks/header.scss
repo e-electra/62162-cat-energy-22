@@ -89,13 +89,13 @@
   display: none;
 }
 
+.header__navigation--closed .navigation__list {
+  display: none;
+}
+
 .header__navigation--opened .navigation__list,
 .header__navigation--no-js .navigation__list {
   display: flex;
-}
-
-.header__navigation--closed .navigation__list {
-  display: none;
 }
 
 .header__nav-wrapper {

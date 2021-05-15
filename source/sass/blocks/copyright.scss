@@ -1,11 +1,13 @@
 .copyright {
   display: flex;
+  justify-content: center;
 }
 
 .copyright__text {
   font-size: 16px;
   line-height: 18px;
   color: $darkgrey;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     margin-right: 20px;
@@ -14,11 +16,13 @@
 
 .copyright__icon {
   color: $social;
+  margin-left: auto;
 }
 
 .copyright__link {
   display: flex;
   align-items: center;
+  flex-basis: 100%;
 
   &:hover .copyright__icon {
     color: $basicgreen;
