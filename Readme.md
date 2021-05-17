@@ -1,6 +1,6 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Екатерина](https://up.htmlacademy.ru/adaptive/22/user/62162).
+* Студент: [Екатерина Ермолаева](https://up.htmlacademy.ru/adaptive/22/user/62162).
 * Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
 
 ---
