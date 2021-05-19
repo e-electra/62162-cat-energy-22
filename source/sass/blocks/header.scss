@@ -12,11 +12,10 @@
   max-width: calc(100% - 33px);
 }
 
-//.header__top-container {
-//  display: flex;
-//  flex-grow: 1;
-//  flex-basis: calc(100% - 33px);
-//}
+.header__icon-content {
+  width: 33px;
+  min-width: 33px;
+}
 
 .header__text-logo {
   margin-left: auto;
