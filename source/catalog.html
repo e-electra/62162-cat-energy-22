@@ -5,13 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preload" href="css/style.min.css" as="style">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-  <link rel="preload" href="img/sprite.svg" as="image">
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="img/sprite.svg" as="image" crossorigin="anonymous">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="img/favicon/152.png">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="manifest" href="manifest.webmanifest" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
 <body class="page__body">
@@ -49,6 +49,7 @@
   <main>
     <h1 class="page__title container">Каталог продукции</h1>
     <section class="catalog">
+      <h2 class="visually-hidden">Каталог продукции</h2>
       <div class="catalog__container container">
         <article class="catalog__item product">
           <div class="product__img-container">
@@ -93,11 +94,11 @@
             <h2 class="product__title">Cat Energy PRO 1000 г</h2>
             <dl class="product__info stats">
               <dt class="stats__name">Масса</dt>
-              <dt class="stats__value">1000г</dt>
+              <dd class="stats__value">1000г</dd>
               <dt class="stats__name">Вкус</dt>
-              <dt class="stats__value">Курица</dt>
+              <dd class="stats__value">Курица</dd>
               <dt class="stats__name">Цена</dt>
-              <dt class="stats__value">1000 Р.</dt>
+              <dd class="stats__value">1000 Р.</dd>
             </dl>
           </div>
           <a href="#" class="product__link button">Заказать</a>
@@ -119,11 +120,11 @@
             <h2 class="product__title">Cat Energy PRO 500 г</h2>
             <dl class="product__info stats">
               <dt class="stats__name">Масса</dt>
-              <dt class="stats__value">500г</dt>
+              <dd class="stats__value">500г</dd>
               <dt class="stats__name">Вкус</dt>
-              <dt class="stats__value">Рыба</dt>
+              <dd class="stats__value">Рыба</dd>
               <dt class="stats__name">Цена</dt>
-              <dt class="stats__value">700 Р.</dt>
+              <dd class="stats__value">700 Р.</dd>
             </dl>
           </div>
           <a href="#" class="product__link button">Заказать</a>
@@ -145,11 +146,11 @@
             <h2 class="product__title">Cat Energy PRO 1000 г</h2>
             <dl class="product__info stats">
               <dt class="stats__name">Масса</dt>
-              <dt class="stats__value">1000г</dt>
+              <dd class="stats__value">1000г</dd>
               <dt class="stats__name">Вкус</dt>
-              <dt class="stats__value">Рыба</dt>
+              <dd class="stats__value">Рыба</dd>
               <dt class="stats__name">Цена</dt>
-              <dt class="stats__value">1000 Р.</dt>
+              <dd class="stats__value">1000 Р.</dd>
             </dl>
           </div>
           <a href="#" class="product__link button">Заказать</a>
@@ -171,11 +172,11 @@
             <h2 class="product__title">Cat Energy Slim 500 г</h2>
             <dl class="product__info stats">
               <dt class="stats__name">Масса</dt>
-              <dt class="stats__value">500г</dt>
+              <dd class="stats__value">500г</dd>
               <dt class="stats__name">Вкус</dt>
-              <dt class="stats__value">Гречка</dt>
+              <dd class="stats__value">Гречка</dd>
               <dt class="stats__name">Цена</dt>
-              <dt class="stats__value">700 Р.</dt>
+              <dd class="stats__value">700 Р.</dd>
             </dl>
           </div>
           <a href="#" class="product__link button">Заказать</a>
@@ -183,25 +184,25 @@
         <article class="catalog__item product">
           <div class="product__img-container">
             <picture>
-              <source srcset="img/big-buckwheat-mobile.webp 1x img/big-buckwheat-mobile@2x.webp 2x" media="(max-width: 767px)" />
+              <source srcset="img/big-buckwheat-mobile.webp 1x, img/big-buckwheat-mobile@2x.webp 2x" media="(max-width: 767px)" />
               <source srcset="img/big-buckwheat-tablet.webp 1x, img/big-buckwheat-tablet@2x.webp 2x" media="(min-width: 768px) and (max-width: 1024px)" />
               <source srcset="img/big-buckwheat-desktop.webp 1x, img/big-buckwheat-desktop@2x.webp 2x" media="(min-width: 1220px)" />
 
-              <source srcset="img/big-buckwheat-mobile.png 1x img/big-buckwheat-mobile@2x.png 2x" media="(max-width: 767px)" />
+              <source srcset="img/big-buckwheat-mobile.png 1x, img/big-buckwheat-mobile@2x.png 2x" media="(max-width: 767px)" />
               <source srcset="img/big-buckwheat-tablet.png 1x, img/big-buckwheat-tablet@2x.png 2x" media="(min-width: 768px) and (max-width: 1024px)" />
               <source srcset="img/big-buckwheat-desktop.png 1x, img/big-buckwheat-desktop@2x.png 2x" media="(min-width: 1220px)" />
-              <img class="product__img" src="img/big-buckwheat-mobile.png" srcset="img/big-buckwheat-mobile.png 1x img/big-buckwheat-mobile@2x.png 2x" alt="Big buckwheat can" />
+              <img class="product__img" src="img/big-buckwheat-mobile.png" srcset="img/big-buckwheat-mobile.png 1x, img/big-buckwheat-mobile@2x.png 2x" alt="Big buckwheat can" />
             </picture>
           </div>
           <div class="product__description">
             <h2 class="product__title">Cat Energy Slim 1000 г</h2>
             <dl class="product__info stats">
               <dt class="stats__name">Масса</dt>
-              <dt class="stats__value">500г</dt>
+              <dd class="stats__value">500г</dd>
               <dt class="stats__name">Вкус</dt>
-              <dt class="stats__value">Гречка</dt>
+              <dd class="stats__value">Гречка</dd>
               <dt class="stats__name">Цена</dt>
-              <dt class="stats__value">700 Р.</dt>
+              <dd class="stats__value">700 Р.</dd>
             </dl>
           </div>
           <a href="#" class="product__link button">Заказать</a>
@@ -223,11 +224,11 @@
             <h2 class="product__title">Cat Energy Slim 500 г</h2>
             <dl class="product__info stats">
               <dt class="stats__name">Масса</dt>
-              <dt class="stats__value">500г</dt>
+              <dd class="stats__value">500г</dd>
               <dt class="stats__name">Вкус</dt>
-              <dt class="stats__value">Рис</dt>
+              <dd class="stats__value">Рис</dd>
               <dt class="stats__name">Цена</dt>
-              <dt class="stats__value">500 Р.</dt>
+              <dd class="stats__value">500 Р.</dd>
             </dl>
           </div>
           <a href="#" class="product__link button">Заказать</a>
@@ -260,7 +261,7 @@
             <h3 class="add-good-item__title">Сахарозаменитель</h3>
             <dl class="add-good-item__description stats">
               <dt class="stats__name">1 упаковка (100 г)</dt>
-              <dt class="stats__value">200 Р.</dt>
+              <dd class="stats__value">200 Р.</dd>
             </dl>
             <a href="#" class="add-good-item__link button">Заказать</a>
           </li>
@@ -268,7 +269,7 @@
             <h3 class="add-good-item__title">Питьевая вода</h3>
             <dl class="add-good-item__description stats">
               <dt class="stats__name">5 литров</dt>
-              <dt class="stats__value">50 Р.</dt>
+              <dd class="stats__value">50 Р.</dd>
             </dl>
             <a href="#" class="add-good-item__link button">Заказать</a>
           </li>
@@ -276,7 +277,7 @@
             <h3 class="add-good-item__title">Молоко</h3>
             <dl class="add-good-item__description stats">
               <dt class="stats__name">1 литр</dt>
-              <dt class="stats__value">100 Р.</dt>
+              <dd class="stats__value">100 Р.</dd>
             </dl>
             <a href="#" class="add-good-item__link button">Заказать</a>
           </li>
@@ -284,7 +285,7 @@
             <h3 class="add-good-item__title">Витамины</h3>
             <dl class="add-good-item__description stats">
               <dt class="stats__name">1 упаковка (30 г)</dt>
-              <dt class="stats__value">300 Р.</dt>
+              <dd class="stats__value">300 Р.</dd>
             </dl>
             <a href="#" class="add-good-item__link button">Заказать</a>
           </li>
