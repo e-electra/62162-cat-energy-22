@@ -7,19 +7,13 @@
   flex-direction: column;
 }
 
-.program-select-form__top .form-section__container {
-  width: 100%;
-  max-width: initial;
-}
-
-.program-select-form__top,
 .program-select-form__title-container,
 .program-select-form__controls-container {
   @include adaptive-width-special;
 }
 
 .program-select-form__controls-container {
-  margin-top: 34px;
+  margin-top: 27px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -34,6 +28,7 @@
 
 .program-select-form__title {
   @include block-title;
+  margin-bottom: 33px;
 }
 
 .program-select-form__description {
@@ -45,7 +40,7 @@
 }
 
 .program-select-form__form {
-  padding-top: 40px;
+  padding-top: 22px;
 
   @media (min-width: $tablet-width) {
     padding-top: 66px;
@@ -60,6 +55,8 @@
 .program-select-form__hint {
   font-size: 14px;
   line-height: 16px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {

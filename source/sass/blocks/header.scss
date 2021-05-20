@@ -41,14 +41,14 @@
 
   &::before {
     content: "";
-    width: 18px;
+    width: 24px;
     height: 2px;
     position: absolute;
-    top: 10px;
-    left: 8px;
-    bottom: 12px;
+    top: 13px;
+    left: 0;
+    bottom: 0;
     background-color: $basicblack;
-    box-shadow: 0 6px 0 0 $basicblack, 0 12px 0 0 $basicblack;
+    box-shadow: 0 8px 0 0 $basicblack, 0 16px 0 0 $basicblack;
   }
 
   &:active {
@@ -111,7 +111,7 @@
 .header__top {
   display: grid;
   align-items: center;
-  min-height: 66px;
+  min-height: 60px;
   margin: 0 auto;
   width: 100%;
   flex-grow: 1;

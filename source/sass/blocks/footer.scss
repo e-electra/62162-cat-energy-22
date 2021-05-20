@@ -4,7 +4,7 @@
 
 .page-footer__container {
   display: grid;
-  padding: 40px 0 20px;
+  padding: 47px 0 0;
 
   @include adaptive-width;
 }
@@ -40,7 +40,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 0 0;
+  padding: 10px 0 22px;
 }
 
 @media (min-width: $tablet-width) {

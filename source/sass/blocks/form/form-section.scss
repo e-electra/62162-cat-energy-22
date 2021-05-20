@@ -7,12 +7,13 @@
 
 .form-section__container,
 .form-section__title-container {
-  @include adaptive-width-special;
+  @include adaptive-width;
+  margin: 0 auto;
 }
 
 .form-section__container {
   display: grid;
-  grid-row-gap: 14px;
+  grid-row-gap: 11px;
 
   @media (min-width: $tablet-width) {
     grid-row-gap: 20px;
@@ -50,7 +51,7 @@
   position: relative;
   display: grid;
   grid-template-columns: max-content 1fr;
-  grid-column-gap: 18px;
+  grid-column-gap: 14px;
   align-content: center;
   min-height: 40px;
 }
@@ -113,6 +114,16 @@
   resize: none;
 }
 
+.form-section--program .form-section__container {
+  grid-row-gap: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px;
+    box-sizing: border-box;
+    border: 1px solid $mediumgrey;
+  }
+}
+
 .form-section--program .form-section__item {
   display: flex;
   align-items: center;
@@ -165,7 +176,7 @@
 }
 
 .form-section__text-content {
-  margin-left: 20px;
+  margin-left: 6px;
 }
 
 .form-section--program .form-section__item:hover,
@@ -229,7 +240,7 @@
 }
 
 .form-section--basic {
-  padding-bottom: 24px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -237,8 +248,8 @@
 }
 
 .form-section--program {
-  padding-top: 24px;
-  padding-bottom: 16px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   grid--template-rows: repeat(3, 40px);
 
   @media (min-width: $tablet-width) {
@@ -246,30 +257,46 @@
   }
 }
 
-.form-section--program .form-section__container {
-  @media (min-width: $tablet-width) {
-    padding: 24px;
-    box-sizing: border-box;
-    border: 1px solid $mediumgrey;
-  }
-}
-
 
 .form-section--contact .form-section__title {
   margin: 30px auto 35px;
+
+  &::after {
+    bottom: 19px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
 }
 
+.form-section--contact .form-section__title-text {
+  padding-right: 0;
+}
+
 .form-section--contact .form-section__container {
   padding-bottom: 24px;
 }
 
+.form-section--comment .form-section__title {
+  margin-top: -4px;
+}
+
 .form-section--comment .form-section__container {
   padding-top: 16px;
-  padding-bottom: 24px;
+  padding-bottom: 66px;
+}
+
+.form-section--comment .form-section__input {
+  padding: 6px 12px;
+}
+
+.form-section--additional .form-section__title {
+  margin-bottom: 31px;
+}
+
+.form-section--additional .form-section__container {
+  grid-row-gap: 3px;
 }
 
 @media (min-width: $tablet-width) {
