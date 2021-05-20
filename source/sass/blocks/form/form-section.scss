@@ -32,8 +32,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 512px;
-    padding: 0 40px;
-    margin-left: -40px;
+    padding: 0 44px;
   }
 }
 
@@ -302,6 +301,62 @@
 @media (min-width: $tablet-width) {
   .form-section--additional .form-section__container {
     grid-template-columns: 2fr 2fr;
+    grid-row-gap: 33px;
+    grid-column-gap: 59px;
+  }
+
+  .form-section--additional .form-section__title {
+    margin-bottom: 62px;
+  }
+
+  .form-section--additional .form-section__text-content {
+    margin-left: 18px;
+  }
+
+  .form-section--basic .form-section__container,
+  .form-section--program .form-section__container {
+    max-width: calc(100% - 140px);
+  }
+
+  .form-section--program .form-section__container {
+    grid-row-gap: 12px;
+  }
+
+  .form-section--program .form-section__text-content {
+    margin-left: 20px;
+  }
+
+  .form-section__title,
+  .form-section--contact .form-section__title {
+    &::after {
+      bottom: -8px;
+    }
+  }
+
+  .form-section--contact .form-section__title {
+    margin-bottom: 74px;
+  }
+
+  .form-section--contact .form-section__container {
+    padding-bottom: 0;
+  }
+
+  .form-section--contact .form-section__title-text {
+    padding-right: 44px;
+  }
+
+  .form-section--comment .form-section__container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .form-section--comment .form-section__title {
+    margin-bottom: 86px;
+  }
+
+  .form-section__container {
+    grid-row-gap: 14px;
+    max-width: calc(100% - 140px);
   }
 }
 
