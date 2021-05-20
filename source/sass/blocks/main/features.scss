@@ -132,11 +132,11 @@
 
   .features__title {
     margin-top: 76px;
-    margin-bottom: 76px;
+    margin-bottom: 64px;
   }
 
   .features__list {
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 94px;
+    grid-template-columns: repeat(4, 248px);
+    grid-column-gap: 79px;
   }
 }

@@ -134,7 +134,7 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    padding: 47px 52px;
+    padding: 47px 52px 62px;
   }
 
   .program__image {
@@ -164,12 +164,18 @@
   .program__description {
     order: 3;
     padding-bottom: 0;
+    margin-top: 44px;
   }
 
   .program__link {
     order: 4;
-    margin-top: 24px;
+    margin-top: 27px;
+    margin-left: 0;
     flex-basis: auto;
+  }
+
+  .program__link-addon {
+    margin-left: 25px;
   }
 
   .program--slim .program__icon {

@@ -260,11 +260,16 @@ input[type="range"]::-webkit-slider-container {
 
 @media (min-width: $desktop-width) {
   .slider__image {
-    top: -240px;
+    top: -227px;
+    left: 49px;
     height: initial;
   }
 
   .slider__visualization {
     min-height: 296px;
+  }
+
+  .slider__controls {
+    margin: -22px auto 0px 121px;
   }
 }

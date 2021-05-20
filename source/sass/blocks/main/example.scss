@@ -126,6 +126,7 @@
 @media (min-width: $desktop-width) {
   .example {
     padding: 0;
+    margin-top: 31px;
   }
 
   .example__info {
@@ -152,13 +153,13 @@
 
   .example__info-wrapper {
     margin-top: 76px;
-    padding: 70px 0 75px;
+    padding: 70px 0 53px;
     background-color: $mediumgrey;
   }
 
   .example__costs {
     text-align: left;
-    margin: 55px 0 auto;
+    margin: 30px 0 auto;
     flex-direction: row;
     justify-content: flex-start;
   }
@@ -174,6 +175,10 @@
   .example__title,
   .example__content {
     margin-left: 0;
+  }
+
+  .example__achivements {
+    margin-top: 66px;
   }
 
   .example__achivements,

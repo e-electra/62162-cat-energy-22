@@ -5,6 +5,10 @@
   border: 1px solid $lightgrey;
   border-radius: 3px;
   padding: 14px 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 0 8px;
+  }
 }
 
 .achivement__value {
