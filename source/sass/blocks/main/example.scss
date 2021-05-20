@@ -98,7 +98,7 @@
 
   .example__summary {
     flex-direction: row;
-    margin-top: 60px;
+    margin-top: 70px;
     padding-bottom: 200px;
   }
 
@@ -106,7 +106,8 @@
     flex-basis: 50%;
     margin-left: 0;
     margin-right: auto;
-    margin-top: 54px;
+    margin-top: 53px;
+    grid-column-gap: 42px;
   }
 
   .example__costs {
@@ -118,6 +119,7 @@
     align-items: flex-end;
     justify-content: center;
     text-align: right;
+    margin-top: 38px;
   }
 }
 

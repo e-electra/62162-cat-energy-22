@@ -192,6 +192,7 @@
 
   .header__icon-content {
     width: 174px;
+    min-width: 174px;
   }
 
   .header__navigation-toggle {
@@ -207,7 +208,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 40px 0;
+    padding: 24px 0;
   }
 
   .header__logo {

@@ -1,10 +1,21 @@
 .programs__container {
   display: grid;
+  gap: 20px;
   max-width: calc(100% - 40px);
+  margin-top: 20px;
 }
 
 .programs__item {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__container {
+    margin-top: 0;
+    gap: 30px;
+    padding-top: 25px;
+    max-width: calc(100% - 60px);
+  }
 }
 
 @media (min-width: $desktop-width) {

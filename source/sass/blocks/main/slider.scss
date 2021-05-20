@@ -235,12 +235,12 @@ input[type="range"]::-webkit-slider-container {
 
 @media (min-width: $tablet-width) {
   .slider__image {
-    top: -160px;
+    top: -142px;
     height: 100%;
   }
 
   .slider__controls {
-    margin: 0 auto;
+    margin: 10px auto 0;
   }
 
   .slider__label {
