@@ -19,7 +19,7 @@
 }
 
 .slider__controls {
-  margin: 20px auto 0;
+  margin: 26px auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,12 +43,12 @@
 
 .slider__label--before {
   text-align: right;
-  margin-right: 12px;
+  margin-right: 18px;
 }
 
 .slider__label--after {
   text-align: left;
-  margin-left: 12px;
+  margin-left: 18px;
 }
 
 .slider__image {
@@ -93,7 +93,7 @@ input[type="range"]::-webkit-slider-container {
 .slider input[type="range"]::-webkit-slider-runnable-track {
   appearance: none;
   height: 14px;
-  padding: 2px 4px;
+  padding: 2px 8px;
   cursor: pointer;
   background-color: $basicwhite;
   border-radius: 6px;
@@ -110,6 +110,23 @@ input[type="range"]::-webkit-slider-container {
 .slider input[type="range"]::-moz-range-track {
   height: 14px;
   cursor: pointer;
+  padding: 2px 8px;
+  background-color: $basicwhite;
+  border-radius: 8px;
+  border: 1px solid $lightgrey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    height: 6px;
+    padding: 0;
+    background-color: $lightgrey2;
+  }
+}
+
+.slider input[type="range"]::-ms-track {
+  height: 14px;
+  cursor: pointer;
+  padding: 2px 8px;
   background-color: $basicwhite;
   border-radius: 8px;
   border: 1px solid $lightgrey;
@@ -125,7 +142,7 @@ input[type="range"]::-webkit-slider-container {
 .slider input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   height: 6px;
-  width: 30px;
+  width: 36px;
   border-radius: 3px;
   background: $basicgreen;
   cursor: pointer;
@@ -155,7 +172,7 @@ input[type="range"]::-webkit-slider-container {
 .slider input[type="range"]::-moz-range-thumb {
   appearance: none;
   height: 6px;
-  width: 30px;
+  width: 36px;
   border-radius: 3px;
   background: $basicgreen;
   cursor: pointer;
@@ -187,7 +204,7 @@ input[type="range"]::-webkit-slider-container {
 .slider input[type="range"]::-ms-thumb {
   appearance: none;
   height: 6px;
-  width: 30px;
+  width: 36px;
   border-radius: 3px;
   background: $basicgreen;
   cursor: pointer;

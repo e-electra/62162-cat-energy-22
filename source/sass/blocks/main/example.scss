@@ -35,12 +35,16 @@
 
 .example__costs {
   @include text-special;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 0;
 }
 
 .example__title {
   @include block-title;
   @include adaptive-width;
-  padding-top: 34px;
+  padding-top: 28px;
   margin: 0 auto;
 }
 
@@ -48,11 +52,11 @@
   color: $darkgrey;
   font-size: 14px;
   line-height: 18px;
-  margin: 24px auto 0;
+  margin: 30px auto 0;
 }
 
 .example__slider {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 @media (min-width: $tablet-width) {
