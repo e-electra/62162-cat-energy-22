@@ -12,6 +12,7 @@
   background-size: cover;
   min-height: 289px;
   margin: 0 auto;
+  max-width: calc(100% - 40px);
 
   @include flex-banner;
 
@@ -20,12 +21,19 @@
   }
 }
 
+.banner__img {
+  display: block;
+  margin-top: 19px;
+  margin-bottom: 37px;
+}
+
 .banner__text {
   @include text-basic;
+  font-size: 16px;
+  line-height: 20px;
   color: $basicwhite;
   max-width: 160px;
   text-align: center;
-  margin-top: 48px;
 }
 
 @media screen and (min-width: $tablet-width) {

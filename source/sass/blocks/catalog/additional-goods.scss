@@ -10,6 +10,7 @@
 .additional-goods__title {
   @include section-title;
   padding: 25px 0 36px;
+  margin: 0;
 
   &::after {
     bottom: 0;

@@ -21,6 +21,7 @@
 .product__description {
   flex-grow: 1;
   flex-basis: 50%;
+  margin-bottom: 9px;
 }
 
 .product__link {
@@ -76,6 +77,7 @@
 .product__info,
 .product__text {
   @include text-basic;
+  line-height: 17px;
 }
 
 @media screen and (min-width: 768px) {
