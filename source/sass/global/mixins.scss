@@ -24,9 +24,7 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
-  @media (min-width: 768px) {
-    font-size: 20px;
-    line-height: 20px;
+  @media (min-width: $tablet-width) {
     padding: 14px 0;
   }
 }

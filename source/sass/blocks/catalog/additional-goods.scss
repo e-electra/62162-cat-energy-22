@@ -16,6 +16,11 @@
     bottom: 0;
     top: -4px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 25px 0 68px;
+    padding: 0;
+  }
 }
 
 .additional-goods__title-container {
@@ -44,7 +49,7 @@
   padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 76px;
+    padding-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {

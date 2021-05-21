@@ -41,6 +41,7 @@
     flex-direction: row;
     justify-content: space-between;
     min-height: 200px;
+    max-width: initial;
     background-image: url("../../img/gift-photo-tablet.png");
 
     @media (min-resolution: 2dppx) {
