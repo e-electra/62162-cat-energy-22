@@ -15,6 +15,10 @@
     padding: 6px 0;
     border-bottom: 1px solid $grey;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 0;
+  }
 }
 
 .stats__name {

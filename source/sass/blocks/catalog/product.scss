@@ -164,6 +164,10 @@
 
 @media screen and (min-width: $desktop-width) {
   .product {
-    padding: 30px 30px 40px;
+    padding: 30px 37px 40px;
+  }
+
+  .product__img {
+    bottom: 33px;
   }
 }
