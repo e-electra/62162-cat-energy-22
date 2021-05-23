@@ -84,6 +84,14 @@
   line-height: 17px;
 }
 
+.product__title-link {
+  color: $basicblack;
+
+  &:visited {
+    color: $basicblack;
+  }
+}
+
 @media screen and (min-width: $tablet-width) {
   .product {
     flex-direction: column;
