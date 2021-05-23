@@ -10,6 +10,21 @@
   }
 }
 
+.product__title,
+.product__title-link {
+  color: $specialdarkgrey;
+}
+
+.product__title-link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .product__img-container {
   align-self: stretch;
   display: flex;
@@ -82,14 +97,6 @@
 .product__text {
   @include text-basic;
   line-height: 17px;
-}
-
-.product__title-link {
-  color: $basicblack;
-
-  &:visited {
-    color: $basicblack;
-  }
 }
 
 @media screen and (min-width: $tablet-width) {
