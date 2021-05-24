@@ -1,15 +1,15 @@
-.page-footer {
+.footer {
   background-color: $basicgrey;
 }
 
-.page-footer__container {
+.footer__container {
   display: grid;
   padding: 47px 0 0;
 
   @include adaptive-width;
 }
 
-.page-footer__logo {
+.footer__logo {
   justify-self: center;
   justify-content: center;
   text-align: center;
@@ -24,19 +24,19 @@
   }
 }
 
-.page-footer__social {
+.footer__social {
   justify-self: center;
   justify-content: center;
   display: flex;
 }
 
-.page-footer__logo,
-.page-footer__social {
+.footer__logo,
+.footer__social {
   width: 100%;
   border-bottom: 1px solid $grey;
 }
 
-.page-footer__copyright {
+.footer__copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,39 +44,39 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .footer {
     min-height: 150px;
     display: flex;
     align-items: center;
   }
 
-  .page-footer__container {
+  .footer__container {
     padding: 0;
     width: 100%;
     flex-basis: 100%;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .page-footer__logo {
+  .footer__logo {
     width: 128px;
     justify-self: start;
     align-self: center;
     padding: 0;
   }
 
-  .page-footer__logo,
-  .page-footer__social {
+  .footer__logo,
+  .footer__social {
     width: initial;
     border: none;
   }
 
-  .page-footer__social {
+  .footer__social {
     justify-self: center;
     align-self: center;
     padding: 0;
   }
 
-  .page-footer__copyright {
+  .footer__copyright {
     justify-self: end;
     align-self: center;
     justify-content: space-between;
