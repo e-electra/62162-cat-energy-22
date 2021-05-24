@@ -33,20 +33,20 @@ a {
   overflow: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $fontHeading;
-  color: $basicblack;
-}
-
 .page__body {
   margin: 0;
   padding: 0;
   font-family: $fontMain;
+}
+
+.page__body h1,
+.page__body h2,
+.page__body h3,
+.page__body h4,
+.page__body h5,
+.page__body h6 {
+  font-family: $fontHeading;
+  color: $basicblack;
 }
 
 .page__title {
